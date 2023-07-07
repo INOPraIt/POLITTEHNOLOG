@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../components/priceTarif/components"
+		},
+		{
+			"path": "../components/priceTarif/components/Modal"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,21 @@
+.creditTarif {
+  width: 90%;
+  background: linear-gradient(178.98deg, #FFFFFF 0.88%, #676767 99.12%);
+  border-radius: 10px;
+  margin-left: 5%;
+  height: 81px;
+  margin-top: 18px;
+
+  .textCreditBtn {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}

@@ -1,0 +1,77 @@
+.containerQuestions {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1000px;
+
+	.lineTop {
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 90px;
+		border: none;
+		background-color: white;
+		height: 2px;
+	}
+
+	.blockQuestionsOne {
+		width: 100%;
+		background-color: rgba(0, 255, 255, 0);
+
+		.questionText {
+			display: flex;	
+			background-color: rgba(229, 255, 0, 0);
+			width: 80%;
+			margin-left: 10%;
+			height: 96px;
+
+			.textQuestions {
+				width: 96%;
+				font-family: 'Mulish';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 142%;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				color: #FFFFFF;
+				margin-left: 15px;
+			}
+
+			.btnPlus {
+				width: 36px;
+				height: 36px;
+				background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
+				border-radius: 4px;
+				color: #1F1F1F;
+				font-size: 30px;
+				margin-top: 31px;
+				margin-right: 31px;
+			}
+
+			
+		}
+		.textAreu {
+			width: 65%;
+			font-family: 'Mulish';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 142%;
+			display: flex;
+			color: #FFFFFF;
+			margin-left: 11%;
+			margin-top: 1px;
+			margin-bottom: 20px;
+		}
+
+		.lineBottom {
+			width: 80%;
+			margin-left: 10%;
+			border: none;
+			background-color: white;
+			height: 2px;
+		} 	
+	}
+	
+	
+}

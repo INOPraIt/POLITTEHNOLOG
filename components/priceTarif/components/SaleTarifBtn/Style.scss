@@ -1,0 +1,23 @@
+.saleTarif {
+  width: 90%;
+  background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
+  border-radius: 10px;
+  margin-left: 5%;
+  height: 81px;
+  margin-top: 28px;
+  cursor: pointer;
+
+
+  .textSaleBtn {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #422F01;
+  }
+}
