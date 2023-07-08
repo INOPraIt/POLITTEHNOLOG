@@ -332,6 +332,11 @@ const Home = () => {
         <div className="textsTwos">
         </div>
       </div>
+      <div className='item4Secret'>
+        <div className='blockMarcelHaziev'>
+          
+        </div>
+      </div>
       <div className="itemHome4">
         <div className='blockItemHome4One'>
           <div className='columnItem4One'>

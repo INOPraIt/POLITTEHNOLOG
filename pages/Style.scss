@@ -30,7 +30,7 @@ $primary: #EBAB07;
 	}
 
 	@media screen and (max-width: 500px) {
-		grid-template-rows: 890px 470px 1689px 187px 1300px 1200px 120px 1000px 1000px 900px 6400px 800px 900px 289px;
+		grid-template-rows: 890px 470px 1389px 1087px 1300px 1200px 120px 1000px 1000px 900px 6400px 800px 900px 289px;
 	}
 
 	.itemHome1 {
@@ -561,7 +561,7 @@ $primary: #EBAB07;
 
 				@media screen and (max-width: 500px) {
 					font-size: 20px;
-					margin-left: -50px;
+					// margin-left: -80px;
 					margin-top: 20px;
 				}
 			}
@@ -583,7 +583,7 @@ $primary: #EBAB07;
 
 				@media screen and (max-width: 500px) {
 					font-size: 20px;
-					margin-left: -50px;
+					// margin-left: -50px;
 					margin-top: -30px;
 				}
 			}
@@ -688,6 +688,11 @@ $primary: #EBAB07;
 				@media screen and (max-width: 1000px) {
 					font-size: 28px;
 				}
+
+				@media screen and (max-width: 500px) {
+					font-size: 18px;
+					margin-left: 115px;
+				}
 			}
 		}
 
@@ -703,11 +708,41 @@ $primary: #EBAB07;
 		}
 	}
 
+	.item4Secret {
+		background-color: red;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		position: relative;
+		display: none;
+
+		@media screen and (max-width: 500px) {
+			display: block;
+		}
+		
+		.blockMarcelHaziev {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 400px 300px;
+			width: 96%;
+			margin-left: 2%;
+			background-color: #000000;
+			border-radius: 10px;
+			border: 1px solid rgb(246, 255, 0);
+			position: absolute;
+			top: -70px;
+			height: 610px;
+		}
+	}
+
 	.itemHome4 {
 		grid-column-start: 1;
 		grid-column-end: 4;
-		background-color: rgb(24, 24, 24);
+		background-color: rgb(255, 0, 0);
 		position: relative;
+
+		@media screen and (max-width: 500px) {
+			display: none;
+		}
 
 		.blockItemHome4One {
 			background: linear-gradient(113.62deg, #0A0A0A 20.85%, #1F1F1F 83.34%);
@@ -742,9 +777,6 @@ $primary: #EBAB07;
 
 			.columnItem4One {
 				background-color: #a07a2100;
-
-
-
 			}
 
 			.imgTextImgFlex {
@@ -758,9 +790,9 @@ $primary: #EBAB07;
 						margin-left: 119px;
 					}
 
-					@media screen and (max-width: 500px) {
-						display: none;
-					}
+					// @media screen and (max-width: 500px) {
+					// 	display: none;
+					// }
 				}
 
 				.textPolittehnologOne {
