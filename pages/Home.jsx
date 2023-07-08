@@ -222,7 +222,7 @@ const Home = () => {
         </div>
         <div className="blockHomeItem4">
           <img
-            className="imgItem4King"
+            className="imgItem4KingSecret"
             src={threeFoto}
           />
           <p className="textHowPolittehnolog">
@@ -285,7 +285,7 @@ const Home = () => {
             Мы не учим, как быть депутатом
           </p>
           <p className="textsWeNoTeacher2">
-            Мы учим, как стать депутатомdawda
+            Мы учим, как стать депутатом
           </p>
           <p className="textsWeNoTeacher3">
             Политтехнологии - это не знания из учебников и
@@ -295,9 +295,9 @@ const Home = () => {
           </p>
         </div>
         <div className="textsOnes">
-          <p className="timeProgramm">
+          <h1 className="timeProgramm">
             Во время программы:
-          </p>
+          </h1>
           {arrayProgOne.map(k =>
             <div key={k.id} className="arrayOne">
               <div>
@@ -532,9 +532,6 @@ const Home = () => {
           <p className='textOneFollower'>
             Получить презентацию курса
             и консультацию специалиста
-          </p>
-          <p>
-
           </p>
           <input
             placeholder='Имя'

@@ -30,7 +30,7 @@ $primary: #EBAB07;
 	}
 
 	@media screen and (max-width: 500px) {
-		grid-template-rows: 890px 870px 1689px 1187px 1300px 1200px 120px 1000px 1000px 900px 6400px 800px 900px 289px;
+		grid-template-rows: 890px 470px 1689px 187px 1300px 1200px 120px 1000px 1000px 900px 6400px 800px 900px 289px;
 	}
 
 	.itemHome1 {
@@ -169,7 +169,9 @@ $primary: #EBAB07;
 				@media screen and (max-width: 500px) {
 					margin-left: 100px;
 					font-size: 10px;
-					margin-top: 90px;
+					margin-top: 260px;
+					width: 82px;
+					margin-left: 270px;
 				}
 			}
 
@@ -188,7 +190,8 @@ $primary: #EBAB07;
 
 				@media screen and (max-width: 500px) {
 					width: 70%;
-					top: 500px;
+					top: 600px;
+					left: 190px;
 				}
 			}
 		}
@@ -198,13 +201,21 @@ $primary: #EBAB07;
 			grid-column-end: 4;
 			grid-row-start: 3;
 			grid-row-end: 4;
-			background-color: rgba(0, 255, 255, 0);
+			background-color: rgba(20, 191, 191, 0);
+
+			@media screen and (max-width: 500px) {
+				display: none;
+			}
 
 			.imgItem4King {
 				margin-top: 66px;
 
 				@media screen and (max-width: 1430px) {
 					margin-top: -90px;
+				}
+
+				@media screen and (max-width: 500px) {
+					display: none;
 				}
 			}
 
@@ -316,6 +327,7 @@ $primary: #EBAB07;
 					}
 
 					@media screen and (max-width: 1000px) {
+						width: 99%;
 						margin-top: -150px;
 					}
 
@@ -435,6 +447,7 @@ $primary: #EBAB07;
 		grid-column-end: 3;
 		background-image: url('../components/img/6.png');
 		background-size: 100%;
+		background-repeat: no-repeat;
 
 		@media screen and (max-width: 1200px) {
 			background-size: 99%;
@@ -442,7 +455,7 @@ $primary: #EBAB07;
 		}
 
 		@media screen and (max-width: 500px) {
-			background-size: 170%;
+			background-size: 100%;
 		}
 
 		.text2x {
@@ -460,6 +473,13 @@ $primary: #EBAB07;
 			@media screen and (max-width: 1000px) {
 				font-size: 36px;
 			}
+
+			@media screen and (max-width: 500px) {
+				font-size: 24px;
+				line-height: 31px;
+				margin-top: 20px;
+
+			}
 		}
 
 		.classFotoOne {
@@ -471,6 +491,10 @@ $primary: #EBAB07;
 			.fiveFotoOne {
 				margin-top: 94px;
 				width: 60%;
+
+				@media screen and (max-width: 500px) {
+					margin-top: 34px;
+				}
 			}
 
 			.btnGold {
@@ -534,6 +558,12 @@ $primary: #EBAB07;
 				@media screen and (max-width: 1000px) {
 					font-size: 36px;
 				}
+
+				@media screen and (max-width: 500px) {
+					font-size: 20px;
+					margin-left: -50px;
+					margin-top: 20px;
+				}
 			}
 
 			.textsWeNoTeacher2 {
@@ -550,6 +580,12 @@ $primary: #EBAB07;
 				@media screen and (max-width: 1000px) {
 					font-size: 36px;
 				}
+
+				@media screen and (max-width: 500px) {
+					font-size: 20px;
+					margin-left: -50px;
+					margin-top: -30px;
+				}
 			}
 
 			.textsWeNoTeacher3 {
@@ -564,6 +600,10 @@ $primary: #EBAB07;
 
 				@media screen and (max-width: 1000px) {
 					font-size: 18px;
+				}
+
+				@media screen and (max-width: 500px) {
+					display: none;
 				}
 			}
 		}
@@ -588,6 +628,12 @@ $primary: #EBAB07;
 				color: #181818;
 				margin-left: 150px;
 				margin-top: 113px;
+
+				@media screen and (max-width: 500px) {
+					font-size: 18px;
+					margin-left: 112px;
+					margin-top: -125px;
+				}
 			}
 
 			.arrayOne {
@@ -596,6 +642,13 @@ $primary: #EBAB07;
 				.iconOne {
 					margin-left: 150px;
 					margin-top: 27px;
+
+					@media screen and (max-width: 500px) {
+						margin-left: 115px;
+						width: 7.976px;
+						height: 7.976px;
+
+					}
 				}
 
 				.textArrayOne {
@@ -611,6 +664,11 @@ $primary: #EBAB07;
 
 					@media screen and (max-width: 1000px) {
 						font-size: 18px;
+					}
+
+					@media screen and (max-width: 500px) {
+						width: 215px;
+						font-size: 16px;
 					}
 				}
 			}
@@ -651,9 +709,6 @@ $primary: #EBAB07;
 		background-color: rgb(24, 24, 24);
 		position: relative;
 
-
-
-
 		.blockItemHome4One {
 			background: linear-gradient(113.62deg, #0A0A0A 20.85%, #1F1F1F 83.34%);
 			border-radius: 56px;
@@ -669,6 +724,11 @@ $primary: #EBAB07;
 			@media screen and (max-width: 1920px) {
 				width: 80%;
 				margin-left: 10%;
+			}
+
+			@media screen and (max-width: 1900px) {
+				width: 96%;
+				margin-left: 2%;
 			}
 
 			@media screen and (max-width: 1000px) {
