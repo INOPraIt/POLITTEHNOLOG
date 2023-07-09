@@ -788,6 +788,46 @@ const Home = () => {
           <Questions />
         </div>
       </div>
+
+      <div className='itemHome14Secret'>
+        <div className='blockTwoItemHome14S'>
+          <p className='textDogovorPublicAffertsS'>
+            Договор публичной оферты
+          </p>
+          <p className='textDogovorPublicAffertsSTwo'>
+            Политика конфиденциальности
+          </p>
+          <p className='textTelegaS'>
+            Написать нам в Telegram
+          </p>
+          <p className='textlinkTelega'>
+            Telegram канал
+          </p>
+          <p className='textEmailS'>
+            e-mail: marseldigital407@gmail.com
+          </p>
+          <div className='supportBlockOneS'>
+            <p className='supportTextS'>При поддержке:</p>
+          </div>
+        </div>
+
+        <div className='blockOneItemHome14S'>
+          <p className='suportTextS'>При поддержке:</p>
+          <div>
+            <img
+              src={logoOne}
+              style={{ marginTop: 30, marginLeft: 16 }}
+            />
+          </div>
+          <div>
+            <img
+              src={logoTwo}
+              style={{ marginTop: 36, marginLeft: 16 }}
+            />
+          </div>
+        </div>
+      </div>
+
       <div className='itemHome14'>
         <div className='blockOneItemHome14'>
           <p className='suportText'>При поддержке:</p>
@@ -804,6 +844,7 @@ const Home = () => {
             />
           </div>
         </div>
+
         <div className='blockTwoItemHome14'>
           <p style={{ marginTop: 34 }} className='dogovorPoliceCondfind'>
             Договор публичной оферты
