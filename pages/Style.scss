@@ -30,7 +30,7 @@ $primary: #EBAB07;
 	}
 
 	@media screen and (max-width: 500px) {
-		grid-template-rows: 890px 470px 1389px 1087px 1300px 1200px 120px 1000px 1000px 900px 6400px 800px 900px 289px;
+		grid-template-rows: 890px 470px 1389px 587px 1300px 1200px 120px 1000px 1000px 900px 6400px 800px 900px 289px;
 	}
 
 	.itemHome1 {
@@ -709,7 +709,7 @@ $primary: #EBAB07;
 	}
 
 	.item4Secret {
-		background-color: red;
+		background-color: #171717;
 		grid-column-start: 1;
 		grid-column-end: 4;
 		position: relative;
@@ -721,16 +721,158 @@ $primary: #EBAB07;
 		
 		.blockMarcelHaziev {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 400px 300px;
+			grid-template-columns: 1fr 1.3fr;
+			grid-template-rows: 100px 190px 315px;
 			width: 96%;
 			margin-left: 2%;
 			background-color: #000000;
-			border-radius: 10px;
+			border-radius: 24px;
 			border: 1px solid rgb(246, 255, 0);
 			position: absolute;
 			top: -70px;
 			height: 610px;
+
+			.imgBlockMarcelText {
+				display: flex;
+				justify-content: center;
+				margin-top: 20px;
+				background-color: #38280200;
+				grid-column-start: 1;
+				grid-column-end: 4;
+
+				.imgClass1 {
+					margin-top: 20px;
+					margin-left: 23px;
+
+				}
+
+				.textLeadingPolittehnolog {
+					color: white;
+					width: 236px;
+					text-align: center;
+					font-family: Montserrat;
+					margin-left: 10px;
+					margin-right: 10px;
+				}
+
+				.imgClass2 {
+					margin-top: 20px;
+				}
+			}
+
+			.blockMarcelHazievTwo {
+				grid-row-start: 2;
+				background-color: #35380200;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				grid-column-start: 1;
+				grid-column-end: 4;
+
+
+				.marcelHazievTextOne {
+					color: white;
+					font-family: Montserrat;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+					text-transform: uppercase;
+				}
+
+				.sixFotoMarcelHazievOne {
+					width: 30px;
+					height: 26px;
+					margin-top: 13px;
+				}
+
+				.textLongIdei {
+					color: var(--on-bg, #FFF);
+					text-align: center;
+					font-family: Mulish;
+					font-size: 10px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 130%;
+					width: 92%;
+					margin-top: 2px;
+				}
+			}
+
+			.blockMarcelHazievThree {
+				background-color: rgba(174, 255, 0, 0);
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 3;
+
+				.textDeputatOneSecret {
+					display: flex;
+					margin-top: 8px;
+
+					.imgCheckSecret {
+						width: 12px;
+						height: 12px;
+						flex-shrink: 0;
+						margin-top: 1px;
+						margin-left: 10px;
+					}
+
+					.textOneTitleSecret {
+						font-family: Mulish;
+						font-size: 10px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 130%;
+						color: var(--on-bg, #FFF);
+						margin-left: 4px;
+					}
+				}
+
+				.arraySecurity {
+					margin-top: 27.5px;
+				}
+
+				.arrayThreeSecret {
+					display: flex;
+					margin-top: 6px;
+				
+
+					.imgLinksSecret {
+						width: 20px;
+						height: 20px;
+						margin-left: 10px;
+					}
+
+					.titleStyleSecret {
+						margin-top: 2px;
+						margin-left: 4px;
+						color: var(--on-bg, #FFF);
+						font-family: Mulish;
+						font-size: 10px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 142%;
+						text-decoration-line: underline;
+					}
+				}
+
+				
+			}
+
+			.blockMarcelHazievFour {
+				background-color: rgba(255, 157, 0, 0);
+				grid-column-start: 2;
+				grid-column-end: 4;
+				grid-row-start: 3;
+
+				.marcelFotoSecretOne {
+					width: 94.5%;
+					border-radius: 0 0 24px 0;
+					margin-left: 5%;
+					margin-top: -3px;
+				}
+			}
+			
 		}
 	}
 
@@ -754,7 +896,7 @@ $primary: #EBAB07;
 			top: -80px;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1097px;
+			grid-template-rows: 1097px 500px;
 			
 			@media screen and (max-width: 1920px) {
 				width: 80%;

@@ -33,6 +33,8 @@ import fotoThree from '../components/img/fotoStudents/three.png';
 import fotoFour from '../components/img/fotoStudents/four.png';
 import fotoFive from '../components/img/fotoStudents/five.png';
 import fotoSix from '../components/img/fotoStudents/six.png';
+
+import fotoSecret11 from '../components/img/11Secret.png';
 // import linkThreeTochki from ''
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -332,11 +334,88 @@ const Home = () => {
         <div className="textsTwos">
         </div>
       </div>
+
+
       <div className='item4Secret'>
         <div className='blockMarcelHaziev'>
-          
+          <div className="imgBlockMarcelText">
+            <div>
+              <img
+                src={iconThree}
+                className="imgClass1"
+              />
+            </div>
+            <p className="textLeadingPolittehnolog">
+              Ведущий политтехнолог муниципальных
+              и региональных кампаний
+            </p>
+            <div>
+              <img
+                src={iconFour}
+                className="imgClass2"
+              />
+            </div>
+          </div>
+          <div className='blockMarcelHazievTwo'>
+          <div>
+            <h5 className='marcelHazievTextOne'>
+              марсель хазиев
+            </h5>
+          </div>
+          <img
+            src={sixFoto}
+            className="sixFotoMarcelHazievOne"
+          />
+          <p className='textLongIdei'>
+            Я долго вынашивал идею уложить свой практический опыт 
+            и авторский метод в онлайн курс Политтехнолог 2.0. Чтобы 
+            перенести знания для людей со всех уголков Земли мы 
+            перестроили весь процесс своей работы и реформировали 
+            транслирование знаний и опыта более 60 успешных избирательных 
+            кампаний в онлайн формат. Уверен, пройдя курс Политтехнолог 2.0 
+            вы займете ключевые места в политической жизни своего города 
+            или района
+          </p>
+          </div>
+          <div className='blockMarcelHazievThree'>
+              {arrayFour.map(k =>
+                <div className="textDeputatOneSecret">
+                  <img
+                    src={iconSeven}
+                    className="imgCheckSecret"
+                  />
+                  <p className="textOneTitleSecret">
+                    {k.title}
+                  </p>
+                </div>
+              )}
+              <div className='arraySecurity'>
+              {arrayThree.map(k =>
+                <div className="arrayThreeSecret">
+                  <img
+                    src={k.img}
+                    className="imgLinksSecret"
+                  />
+                  <p className="titleStyleSecret">
+                    {k.title}
+                  </p>
+                </div>
+              )}
+              </div>
+          </div>
+          <div className='blockMarcelHazievFour'>
+            <img 
+              src={fotoSecret11}
+              className='marcelFotoSecretOne'
+            />
+          </div>
+          <div>
+          </div>
         </div>
       </div>
+
+
+
       <div className="itemHome4">
         <div className='blockItemHome4One'>
           <div className='columnItem4One'>
@@ -492,11 +571,11 @@ const Home = () => {
                 <SwiperSlide>
                   <div className='blockFotoStudents'>
                     <p className='textHeaderStudents'>{k.title}</p>
-                    <img 
+                    <img
                       className='imgSrcStudents'
                       src={k.imgLink}
                     />
-                    <img 
+                    <img
                       src='../components/img/Group 2190.png'
                     />
                     <p className='textTitleStudents'>{k.text}</p>
