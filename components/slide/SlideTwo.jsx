@@ -37,6 +37,70 @@ const SlideTwo = () => {
 
 	return (
 		<div>
+			<div className='swiperContainerSecret'>
+			<Swiper
+				spaceBetween={3}
+				slidesPerView={1}
+				onSlideChange={() => console.log('slide change')}
+				modules={[Navigation, Pagination, Scrollbar, A11y]}
+				navigation
+				pagination={{ clickable: true }}
+				scrollbar={{ draggable: true }}
+				onSwiper={(swiper) => console.log(swiper)}
+			>
+				
+				<SwiperSlide style={{width: '200px'}}>
+						<ReactPlayer
+    					className='react-player'
+          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+							width={'90%'}
+          		height='600px'
+							style={{ marginTop: '100px'}}
+        		/>
+							kljfkirfik
+					</SwiperSlide>
+					<SwiperSlide>
+						<ReactPlayer
+    					className='react-player'
+          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+							width={'90%'}
+          		height='600px'
+							style={{marginTop: '100px'}}
+        		/>
+							kljfkirfik
+					</SwiperSlide>
+					<SwiperSlide>
+						<ReactPlayer
+    					className='react-player'
+          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+							width={'90%'}
+          		height='600px'
+							style={{marginTop: '100px'}}
+        		/>
+							kljfkirfik
+					</SwiperSlide>
+					<SwiperSlide>
+						<ReactPlayer
+    					className='react-player'
+          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+							width={'90%'}
+          		height='600px'
+							style={{marginTop: '100px'}}
+        		/>
+							kljfkirfik
+					</SwiperSlide>
+					<SwiperSlide>
+						<ReactPlayer
+    					className='react-player'
+          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+							width={'90%'}
+          		height='600px'
+							style={{marginTop: '100px'}}
+        		/>
+							kljfkirfik
+					</SwiperSlide>
+			</Swiper>
+			</div>
 			<div className='swiperContainer'>
 			<Swiper
 				spaceBetween={3}

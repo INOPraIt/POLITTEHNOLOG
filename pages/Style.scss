@@ -30,7 +30,7 @@ $primary: #EBAB07;
 	}
 
 	@media screen and (max-width: 500px) {
-		grid-template-rows: 890px 470px 1389px 587px 1300px 1200px 120px 1000px 1000px 900px 6400px 800px 900px 289px;
+		grid-template-rows: 890px 470px 1389px 587px 1300px 1600px 120px 700px 600px 900px 6400px 1000px 900px 289px;
 	}
 
 	.itemHome1 {
@@ -866,10 +866,10 @@ $primary: #EBAB07;
 				grid-row-start: 3;
 
 				.marcelFotoSecretOne {
-					width: 94.5%;
+					width: 80%;
 					border-radius: 0 0 24px 0;
-					margin-left: 5%;
-					margin-top: -3px;
+					margin-left: 20%;
+					margin-top: 4px;
 				}
 			}
 			
@@ -1331,6 +1331,10 @@ $primary: #EBAB07;
 			text-align: center;
 			text-transform: uppercase;
 			color: #422F01;
+
+			@media screen and (max-width: 500px) {
+				width: 70%;
+			}
 		}
 	}
 
@@ -1354,6 +1358,15 @@ $primary: #EBAB07;
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
 			text-fill-color: transparent;
+
+			@media screen and (max-width: 500px) {
+				text-align: center;
+				font-family: Montserrat;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
 		}
 
 		.methodMarcelsText {
@@ -1374,6 +1387,18 @@ $primary: #EBAB07;
 
 			@media screen and (max-width: 1920px) {
 				margin-left: 28%;
+			}
+
+			@media screen and (max-width: 500px) {
+				margin-left: 12%;
+				width: 356px;
+				color: var(--on-bg, #FFF);
+				text-align: center;
+				font-family: Mulish;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 130%;
 			}
 		}
 	}
@@ -1404,6 +1429,12 @@ $primary: #EBAB07;
 				font-size: 36px;
 				width: 827px;
 			}
+
+			@media screen and (max-width: 500px) {
+				font-size: 24px;
+				width: 352px;
+				line-height: normal;
+			}
 		}
 
 		.imgFotoSertificats {
@@ -1428,6 +1459,8 @@ $primary: #EBAB07;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			margin-top: 100px;
+
+			
 		}
 	}
 
@@ -1450,6 +1483,14 @@ $primary: #EBAB07;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			margin-top: 40px;
+
+			@media screen and (max-width: 500px) {
+				font-size: 24px;
+				width: 267px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
 		}
 	}
 
@@ -1463,6 +1504,84 @@ $primary: #EBAB07;
 		.blockImgOne {}
 	}
 
+	.itemHome12Secret {
+		display: none;
+		
+		@media screen and (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #181818;
+			grid-column-start: 1;
+			grid-column-end: 4;
+
+			.prezentationTextSecret {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 108%;
+				text-align: center;
+				display: flex;
+				width: 312px;
+				flex-direction: column;
+				justify-content: center;
+				flex-shrink: 0;
+				color: #ffffff;
+				margin-top: 80px;
+			}
+
+			.blockFormSecret {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				align-items: center;
+				margin-top: 44px;
+
+				.inpSecretForm {
+					width: 70%;
+					outline: none;
+					height: 46px;
+					color: var(--on-bg, #FFF);
+					font-family: Mulish;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 130%;
+					margin-top: 16px;
+					border-radius: 10px;
+					border: 1px solid #FFF;
+					background-color: #00000000;
+					padding-left: 22px;
+				}
+			}
+
+			.getSecret {
+				border-radius: 10px;
+				width: 70%;
+				background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
+				border-radius: 10px;
+				font-family: 'Mulish';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 25px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-transform: uppercase;
+				color: #382802;
+				margin-top: 25px;
+				height: 90px;
+				background: var(--primary, linear-gradient(167deg, rgba(255, 248, 248, 0.54) 0%, rgba(255, 255, 255, 0.11) 100%), linear-gradient(162deg, #F8B50B 0%, rgba(235, 171, 7, 0.59) 100%));
+			}
+
+			.chesFotoSecret {
+				width: 50%;
+			}
+		}
+	}
+
 	.itemHome12 {
 		grid-column-start: 1;
 		grid-column-end: 4;
@@ -1470,6 +1589,10 @@ $primary: #EBAB07;
 		display: grid;
 		grid-template-columns: 1.7fr 1fr;
 		grid-template-rows: 1000px;
+
+		@media screen and (max-width: 500px) {
+			display: none;
+		}
 
 		.blockItemHome12One {
 
@@ -1606,6 +1729,10 @@ $primary: #EBAB07;
 			background: linear-gradient(178.98deg, #FFFFFF 0.88%, #676767 99.12%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+
+			@media screen and (max-width: 500px) {
+				font-size: 24px;
+			}
 		}
 	}
 
@@ -1797,12 +1924,66 @@ $primary: #EBAB07;
 	}
 }
 
+.blockFlexSecret {
+	display: none;
+
+	@media screen and (max-width: 500px) {
+		display: block;
+	}
+
+	.blockFotoStudentsS {
+		background-color: #000000;
+		height: 369px;
+		border-radius: 24px;
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		
+
+		.studentsLinkSecret {
+			border: 1px solid yellow;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			margin-top: 30px;
+		}
+
+		.titleStudentsSecret {
+			color: var(--on-bg, #FFF);
+			font-family: Montserrat;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			text-transform: uppercase;
+			margin-top: 16px;
+		}
+
+		.textStudentsSecret {
+			color: var(--on-bg, #FFF);
+			text-align: center;
+			font-family: Mulish;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%;
+			margin-top: 38px;
+		}
+	}
+}
+
 .blockFlex {
 	width: 90%;
 	background-color: rgba(225, 30, 30, 0);
 	margin-left: 5%;
 	margin-top: 40px;
 	height: 900px;
+
+	@media screen and (max-width: 500px) {
+		display: none;
+	}
 
 	.swiperContainer {
 		width: 100%;
@@ -1845,5 +2026,17 @@ $primary: #EBAB07;
 .swiperContainer {
 	width: 80%;
 	margin-left: 10%;
+
+	@media screen and (max-width: 500px) {
+		display: none;
+	}
 }
 
+.swiperContainerSecret {
+	display: none;
+
+	@media screen and (max-width: 500px){
+		display: block;
+		margin-left: 50px;
+	}
+}

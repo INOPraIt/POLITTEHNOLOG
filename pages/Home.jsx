@@ -34,8 +34,14 @@ import fotoThree from '../components/img/fotoStudents/three.png';
 import fotoFour from '../components/img/fotoStudents/four.png';
 import fotoFive from '../components/img/fotoStudents/five.png';
 import fotoSix from '../components/img/fotoStudents/six.png';
-import secretProgramm from '../components/img/secretProgramm.png'
-
+import secretProgramm from '../components/img/secretProgramm.png';
+import fotoOneS from '../components/img/fotoStudentsElips/1.png';
+import fotoTwoS from '../components/img/fotoStudentsElips/2.png';
+import fotoThreeS from '../components/img/fotoStudentsElips/3.png';
+import fotoFourS from '../components/img/fotoStudentsElips/4.png';
+import fotoFiveS from '../components/img/fotoStudentsElips/5.png';
+import fotoSixS from '../components/img/fotoStudentsElips/6.png';
+import secretFotoChes from '../components/img/17.png';
 
 import fotoSecret11 from '../components/img/11Secret.png';
 // import linkThreeTochki from ''
@@ -177,6 +183,45 @@ const Home = () => {
       id: 6,
       title: 'БЕЛЬСКИЙ ДМИТРИЙ',
       imgLink: fotoSix,
+      text: 'В 2021 году избран депутатом Калининского района Челябинска от СР.'
+    },
+  ]
+
+  const arrayCasesStudentsSecret = [
+    {
+      id: 1,
+      title: 'ГЛАДЫШЕВА ИРИНА',
+      imgLink: fotoOneS,
+      text: 'Избралась депутатом в Центральном районе Челябинска в 2021 году самовыдвиженцем. Второе место заняли представители СРов, третье - ЕР. Сейчас Гладышева Ирина  занимается правозащитой деятельностью в сфере ЖКХ и экологии.  А также Ирина Гладышева возглавила товарищество собственников недвижимости в своём доме.'
+    },
+    {
+      id: 2,
+      title: 'ИВАНОВ ДМИТРИЙ',
+      imgLink: fotoTwoS,
+      text: 'Избрался депутатом в Калининском районе Челябинска в 2021 году от партии СР, обогнав  основного оппонента более, чем в два раза. Сейчас занимается научной деятельностью и работой депутата.'
+    },
+    {
+      id: 3,
+      title: 'ДАДАЕВ ВАДИМ',
+      imgLink: fotoThreeS,
+      text: 'В 2019 году избрался депутатом Центрального района города Челябинска от партии Единая Россия.'
+    },
+    {
+      id: 4,
+      title: 'РОМАНОВ ИГОРЬ',
+      imgLink: fotoFourS,
+      text: 'В 2019 году избрался депутатом и провёл пул из трёх депутатов в поселке Красное Поле Сосновского района Челябинской области в качестве самовыдвиженцев. В настоящий момент работают депутатами и защищают права жителей в области ЖКХ.'
+    },
+    {
+      id: 5,
+      title: 'ПЕРЬМЯКОВ ИЛЬЯ',
+      imgLink: fotoFiveS,
+      text: 'В 2021 году избрался депутатом Калининского района города Челябинска от партии СР.'
+    },
+    {
+      id: 6,
+      title: 'БЕЛЬСКИЙ ДМИТРИЙ',
+      imgLink: fotoSixS,
       text: 'В 2021 году избран депутатом Калининского района Челябинска от СР.'
     },
   ]
@@ -584,8 +629,40 @@ const Home = () => {
           муниципального и регионального уровней.
           Вот некоторые них:
         </p>
+
+        <div className='blockFlexSecret'>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+            className='swiperContainer'
+          >
+            {arrayCasesStudentsSecret.map(k =>
+                <SwiperSlide>
+                  <div className='blockFotoStudentsS'>
+                    <img 
+                      className='studentsLinkSecret'
+                      src={k.imgLink}
+                    />
+                    <p className='titleStudentsSecret'>
+                      {k.title}
+                    </p>
+                    <p className='textStudentsSecret'>
+                      {k.text}
+                    </p>
+                  </div>
+                </SwiperSlide>
+              )}
+          </Swiper>
+        </div>
+
+
         <div className='blockFlex'>
-          <div>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={50}
@@ -613,9 +690,9 @@ const Home = () => {
                 </SwiperSlide>
               )}
             </Swiper>
-          </div>
-
         </div>
+
+
       </div>
       <div className='itemHome9'>
         <p className='stopingText'>
@@ -641,6 +718,35 @@ const Home = () => {
           <PriceTarif />
         </div>
       </div>
+
+        <div className='itemHome12Secret'>
+          <p className='prezentationTextSecret'>
+            Получить презентацию курса и 
+            консультацию специалиста
+          </p>
+          <div className='blockFormSecret'>
+            <input 
+              placeholder='Имя'
+              className='inpSecretForm'
+            />
+            <input 
+              placeholder='Телефон'
+              className='inpSecretForm'
+            />
+            <input 
+              placeholder='e-mail'
+              className='inpSecretForm'
+            />
+          </div>
+          <button className='getSecret'>
+            Получить
+          </button>
+          <img 
+            src={secretFotoChes}
+            className='chesFotoSecret'
+          />
+        </div>
+
       <div className='itemHome12'>
         <div className='blockItemHome12One'>
           <p className='textOneFollower'>
