@@ -1,3 +1,4 @@
+import React from 'react'
 import RormatOneeact from 'react';
 import './Style.scss';
 import oneFoto from '../components/img/2.png';
@@ -33,6 +34,8 @@ import fotoThree from '../components/img/fotoStudents/three.png';
 import fotoFour from '../components/img/fotoStudents/four.png';
 import fotoFive from '../components/img/fotoStudents/five.png';
 import fotoSix from '../components/img/fotoStudents/six.png';
+import secretProgramm from '../components/img/secretProgramm.png'
+
 
 import fotoSecret11 from '../components/img/11Secret.png';
 // import linkThreeTochki from ''
@@ -45,6 +48,20 @@ import ReactPlayer from 'react-player';
 
 const Home = () => {
 
+  React.useResize = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+    useEffect(() => {
+      const handleResize = (event) => {
+        setWidth(event.target.innerWidth);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
+    console.log(width);
+  }
 
   const arrayProgOne = [
     {
@@ -414,8 +431,6 @@ const Home = () => {
         </div>
       </div>
 
-
-
       <div className="itemHome4">
         <div className='blockItemHome4One'>
           <div className='columnItem4One'>
@@ -497,6 +512,21 @@ const Home = () => {
           </div>
         </div>
       </div>
+      
+      
+      <div className='itemHome5Secret'>
+        <p className='programmTeacher'>
+          Программа обучения
+        </p>
+        <div className='imgProgramm'>
+          <img 
+            src={secretProgramm}
+            style={{marginTop: 50}}
+          />
+        </div>
+      </div>
+
+
       <div className="itemHome5">
         <h1 className="programmTeacher">
           Программа обучения
