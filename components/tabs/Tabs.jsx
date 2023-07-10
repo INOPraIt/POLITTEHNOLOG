@@ -285,6 +285,7 @@ const Tabs = () => {
 		<div className="container">
 			<div className="secretBlockTabs">
 				<div className="selectMenuBar">
+					<div className="btnSelectMenuBar">
 					<button
 						onClick={() => setSelect(prev => !prev)}
 						className="selectProg"
@@ -298,6 +299,7 @@ const Tabs = () => {
 							/>
 						</div>
 					</button>
+					</div>
 					{select &&
 						<div className="absoluteBtn">
 							<button
