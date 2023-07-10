@@ -289,7 +289,14 @@ const Tabs = () => {
 						onClick={() => setSelect(prev => !prev)}
 						className="selectProg"
 					>
-						Select
+						<div className="selectModuleBtn">
+							<p>
+								Выберете модуль
+							</p>
+							<img 
+								src=""
+							/>
+						</div>
 					</button>
 					{select &&
 						<div className="absoluteBtn">
@@ -318,7 +325,7 @@ const Tabs = () => {
 								Модуль 4
 							</button>
 							<button
-								className={toggleState === 5 ? "tabsS active-tabsS" : "tabsS"}
+								className={toggleState === 5 ? "tabsSF active-tabsSF" : "tabsSF"}
 								onClick={() => toggleTab(5)}
 							>
 								Модуль 5

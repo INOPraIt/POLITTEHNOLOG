@@ -44,6 +44,26 @@ body {
 	}
 }
 
+.tabsSF {
+	padding: 15px;
+	text-align: center;
+	width: 91%;
+	background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
+	cursor: pointer;
+	box-sizing: content-box;
+	position: relative;
+	outline: none;
+	color: #fff;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	cursor: pointer;
+	border: none;
+	background-color: #000000;
+}
+
 .tabsS {
 	padding: 15px;
 	text-align: center;
@@ -241,7 +261,7 @@ button {
 		}
 
 		@media screen and (max-width: 500px) {
-			height: 1100px;
+			height: 1400px;
 		}
 	}
 
@@ -553,6 +573,10 @@ button {
 	font-family: 'Mulish';
 	background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
 	border-radius: 10px;
+
+	.selectModuleBtn {
+		display: flex;
+	}
 }
 
 .absoluteBtn {
