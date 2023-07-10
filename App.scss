@@ -181,6 +181,8 @@ button {
 	border: none;
 	border-radius: 18px;
 	position: relative;
+	display: flex;
+	justify-content: center;
 
 	@media screen and (max-width: 1000px) {
 		background-color: #d60b0b00;

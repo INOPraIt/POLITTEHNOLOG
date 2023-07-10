@@ -327,6 +327,10 @@ $primary: #EBAB07;
 						margin-top: 200px;
 					}
 
+					@media screen and (max-width: 1400px) {
+						width: 90%;
+					}
+
 					@media screen and (max-width: 1000px) {
 						width: 99%;
 						margin-top: -150px;
@@ -369,7 +373,7 @@ $primary: #EBAB07;
 
 					.getCheckList {
 						background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
-						width: 275px;
+						width: 575px;
 						height: 97px;
 						display: flex;
 						justify-content: center;
@@ -384,6 +388,7 @@ $primary: #EBAB07;
 						margin-top: 16px;
 						margin-left: 5px;
 						align-items: center;
+						margin-right: 10px;
 
 						@media screen and (max-width: 1920px) {
 							margin-left: 40px;
@@ -884,6 +889,8 @@ $primary: #EBAB07;
 		grid-column-end: 4;
 		background-color: #171717;
 		position: relative;
+		display: flex;
+		justify-content: center;
 
 		@media screen and (max-width: 800px) {
 			display: none;
@@ -902,8 +909,7 @@ $primary: #EBAB07;
 			grid-template-rows: 1097px 500px;
 			
 			@media screen and (max-width: 1920px) {
-				width: 80%;
-				margin-left: 10%;
+				width: 75%;
 			}
 
 			@media screen and (max-width: 1900px) {
@@ -1163,6 +1169,17 @@ $primary: #EBAB07;
 			color: #FFFFFF;
 			margin-top: 46px;
 		}
+
+		.imgProgramm {
+			background-color: rgba(255, 0, 0, 0);
+			display: flex;
+			justify-content: center;
+
+			.secretProgrammImg {
+				margin-top: 80px;
+				
+			}
+		}
 	}
 
 	.itemHome5 {
@@ -1172,6 +1189,9 @@ $primary: #EBAB07;
 		background-image: url('../components/img/12.png');
 		background-repeat: no-repeat;
 		background-size: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 		@media screen and (max-width: 1000px) {
 			background-image: url('../components/img/15.png');
@@ -1182,96 +1202,12 @@ $primary: #EBAB07;
 		}
 
 		.methodWorks {
-			display: flex;
-			@media screen and (max-width: 1920px) {
-				margin-top: 280px;
-				margin-left: 200px;
-			}
+			background-color: rgba(255, 0, 0, 0);
+			width: 80%;
+			margin-top: 300px;
 
 			.programmCoursFoto {
-				width: 60px;
-
-				@media screen and (max-width: 1920px) {
-					width: 1600px;
-				}
-			}
-
-			.textHomeFive {
-				font-family: 'Mulish';
-				font-style: normal;
-				font-weight: 400;
-				font-size: 20px;
-				line-height: 130%;
-				display: flex;
-				align-items: center;
-				color: #FFFFFF;
-
-				@media screen and (max-width: 1920px) {
-					margin-top: 10px;
-				}
-
-				@media screen and (max-width: 1000px) {
-					font-size: 18px;
-				}
-			}
-
-			.blockHomeFive1 {
-				position: absolute;
-				margin-top: 947px;
-				width: 319px;
-				margin-left: 115px;
-
-				@media screen and (max-width: 1000px) {
-					margin-top: 260px;
-				}
-			}
-
-			.blockHomeFive2 {
-				position: absolute;
-				margin-top: 817px;
-				width: 319px;
-				margin-left: 315px;
-
-				@media screen and (max-width: 1000px) {
-					margin-top: 410px;
-					margin-left: 600px;
-				}
-			}
-
-			.blockHomeFive3 {
-				position: absolute;
-				margin-top: 717px;
-				width: 319px;
-				margin-left: 495px;
-
-				@media screen and (max-width: 1000px) {
-					margin-top: 535px;
-					margin-left: 120px;
-				}
-			}
-
-			.blockHomeFive4 {
-				position: absolute;
-				position: absolute;
-				margin-top: 587px;
-				width: 319px;
-				margin-left: 680px;
-
-				@media screen and (max-width: 1000px) {
-					margin-top: 660px;
-					margin-left: 550px;
-				}
-			}
-
-			.blockHomeFive5 {
-				position: absolute;
-				margin-top: 477px;
-				width: 319px;
-				margin-left: 955px;
-
-				@media screen and (max-width: 1000px) {
-					margin-left: 1055px;
-				}
+				width: 100%;
 			}
 		}
 
@@ -1288,7 +1224,7 @@ $primary: #EBAB07;
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
 			text-fill-color: transparent;
-			margin-top: 10px;
+			margin-top: 50px;
 		}
 
 		.weGaranteed {
@@ -1355,63 +1291,65 @@ $primary: #EBAB07;
 		background-color: #181818;
 		align-items: center;
 
-		.keysStudentsText {
-			text-align: center;
-			margin-top: 127px;
-			font-family: 'Montserrat';
-			font-style: normal;
-			font-weight: 700;
-			font-size: 50px;
-			line-height: 61px;
-			text-align: center;
-			background: linear-gradient(178.98deg, #FFFFFF 0.88%, #676767 99.12%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-			text-fill-color: transparent;
+		.studentsKeys {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 
-			@media screen and (max-width: 800px) {
-				text-align: center;
-				font-family: Montserrat;
-				font-size: 24px;
+			.keysStudentsText {
+								margin-top: 127px;
+				font-family: 'Montserrat';
 				font-style: normal;
 				font-weight: 700;
-				line-height: normal;
+				font-size: 50px;
+				line-height: 61px;
+				background: linear-gradient(178.98deg, #FFFFFF 0.88%, #676767 99.12%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+	
+				@media screen and (max-width: 800px) {
+					text-align: center;
+					font-family: Montserrat;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+				}
 			}
-		}
-
-		.methodMarcelsText {
-			text-align: center;
-			margin-top: 16px;
-			width: 842px;
-			height: 53px;
-			font-family: 'Mulish';
-			font-style: normal;
-			font-weight: 400;
-			font-size: 20px;
-			line-height: 130%;
-			display: flex;
-			align-items: center;
-			text-align: center;
-			color: #FFFFFF;
-			margin-left: 20%;
-
-			@media screen and (max-width: 1920px) {
-				margin-left: 28%;
-			}
-
-			@media screen and (max-width: 800px) {
-				margin-left: 12%;
-				width: 356px;
-				color: var(--on-bg, #FFF);
-				text-align: center;
-				font-family: Mulish;
-				font-size: 12px;
+	
+			.methodMarcelsText {
+				margin-top: 16px;
+				width: 842px;
+				height: 53px;
+				font-family: 'Mulish';
 				font-style: normal;
 				font-weight: 400;
+				font-size: 20px;
 				line-height: 130%;
+				display: flex;
+				text-align: center;
+				color: #FFFFFF;
+	
+				@media screen and (max-width: 1920px) {
+				}
+	
+				@media screen and (max-width: 800px) {
+					width: 356px;
+					color: var(--on-bg, #FFF);
+					text-align: center;
+					font-family: Mulish;
+					font-size: 12px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 130%;
+				}
 			}
 		}
+
+		
 	}
 
 	.itemHome9 {
@@ -2032,7 +1970,7 @@ $primary: #EBAB07;
 
 	.blockFotoStudentsS {
 		background-color: #000000;
-		height: 369px;
+		height: 380px;
 		border-radius: 24px;
 		margin-top: 10px;
 		display: flex;
@@ -2089,36 +2027,78 @@ $primary: #EBAB07;
 	}
 
 	.blockFotoStudents {
-		width: 500px;
+		width: 100%;
 		height: 800px;
-		background-color: rgba(255, 255, 255, 0);
-		margin-left: 12%;
+		background-color: rgba(190, 29, 29, 0);
 		display: flex;
-		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-
-		.textHeaderStudents {
-			color: var(--on-bg, #FFF);
-			font-size: 20px;
-			font-family: Montserrat;
-			text-align: center;
-			margin-top: -90px;
+		flex-direction: column;
+		
+		.swiperSlideCenter {
+			display: flex;
+			justify-content: center;
 		}
 
-		.imgSrcStudents {
-			margin-top: 26px;
+
+		.namedStudentsTitle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			
+
+			.textHeaderStudents {
+				color: var(--on-bg, #FFF);
+				font-size: 20px;
+				font-family: Montserrat;
+				text-align: center;
+				margin-top: 20px;
+			}
+
 		}
 
-		.textTitleStudents {
-			color: var(--on-bg, #FFF);
-			text-align: center;
-			font-size: 18px;
-			font-family: Mulish;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 142%;
+		.imgStudentsDiv {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.imgSrcStudents {
+				margin-top: 26px;
+			}
+
 		}
+
+		.rombsBlock {
+			display: flex;
+			justify-content: center;
+
+			.imgRombs {
+				width: 40px;
+				margin-top: 50px;
+			}
+		}
+
+		.textDescriptionDiv {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			background-color: #00000000;
+			width: 100%;
+
+			.textTitleStudents {
+				color: var(--on-bg, #FFF);
+				text-align: center;
+				font-size: 18px;
+				font-family: Mulish;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 142%;
+				margin-top: 10px;
+				max-width: 583px;
+			}
+
+		}
+
+		
 	}
 }
 

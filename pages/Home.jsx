@@ -42,7 +42,8 @@ import fotoFourS from '../components/img/fotoStudentsElips/4.png';
 import fotoFiveS from '../components/img/fotoStudentsElips/5.png';
 import fotoSixS from '../components/img/fotoStudentsElips/6.png';
 import secretFotoChes from '../components/img/17.png';
-import imgProgrammFon from '../components/img/programmCours.png'
+import imgProgrammFon from '../components/img/programmCours.png';
+import imgRombsStudents from '../components/img/20.png'
 
 import fotoSecret11 from '../components/img/11Secret.png';
 // import linkThreeTochki from ''
@@ -265,7 +266,7 @@ const Home = () => {
         </div>
         <div className="blockHomeItem2">
           <p className="textMarcels">
-            Онлайн курс марселя хазиева
+            Онлайн курс Марселя Хазиева
           </p>
         </div>
         <div className='fotoMarcel'>
@@ -332,7 +333,6 @@ const Home = () => {
                   ПОЛУЧИТЬ ЧЕК-ЛИСТ
                 </a>
               </div>
-             
             </div>
           </div>
           <div className="blockItem5Three">
@@ -581,7 +581,7 @@ const Home = () => {
         <div className='imgProgramm'>
           <img 
             src={secretProgramm}
-            style={{marginTop: 50}}
+            className='secretProgrammImg'
           />
         </div>
       </div>
@@ -594,7 +594,6 @@ const Home = () => {
         <div className='methodWorks'>
           <img 
             src={imgProgrammFon}
-            style={{marginLeft: -70, marginTop: 50}}
             className='programmCoursFoto'
           />
         </div>
@@ -608,14 +607,15 @@ const Home = () => {
         </button>
       </div>
       <div className='itemHome8'>
-        <p className='keysStudentsText'>Кейсы наших студентов</p>
-        <p className='methodMarcelsText'>
-          Метод Марселя Хазиева был использован
-          более чем в 60 избирательных кампаний
-          муниципального и регионального уровней.
-          Вот некоторые них:
-        </p>
-
+        <div className='studentsKeys'>
+          <p className='keysStudentsText'>Кейсы наших студентов</p>
+          <p className='methodMarcelsText'>
+            Метод Марселя Хазиева был использован
+            более чем в 60 избирательных кампаний
+            муниципального и регионального уровней.
+            Вот некоторые них:
+          </p>
+        </div>
         <div className='blockFlexSecret'>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -663,15 +663,25 @@ const Home = () => {
               {arrayCasesStudents.map(k =>
                 <SwiperSlide>
                   <div className='blockFotoStudents'>
-                    <p className='textHeaderStudents'>{k.title}</p>
+                    <div className='namedStudentsTitle'>
+                      <p className='textHeaderStudents'>{k.title}</p>
+                    </div>
+                    <div className='imgStudentsDiv'>
                     <img
                       className='imgSrcStudents'
                       src={k.imgLink}
                     />
-                    <img
-                      src='../components/img/Group 2190.png'
-                    />
-                    <p className='textTitleStudents'>{k.text}</p>
+                    </div>
+                    <div className='rombsBlock'>
+                      <img 
+                        src={imgRombsStudents}
+                        className='imgRombs'
+                      />
+                    </div>
+                    <div className='textDescriptionDiv'>
+                      <p className='textTitleStudents'>{k.text}</p>
+                    </div>
+                    
                   </div>
                 </SwiperSlide>
               )}
