@@ -29,7 +29,7 @@ $primary: #EBAB07;
 		grid-template-rows: 590px 870px 1689px 1187px 1300px 1200px 120px 1000px 1000px 900px 6400px 800px 900px 289px;
 	}
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 800px) {
 		grid-template-rows: 890px 470px 1389px 587px 1300px 1900px 120px 700px 600px 900px 6400px 1000px 900px 789px;
 	}
 
@@ -49,7 +49,7 @@ $primary: #EBAB07;
 			background-position: left -120px top 0px;
 		}
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			background-size: 100%;
 			background-position: left 0px top 0px;
 			background-image: url('../components/img/16.png');
@@ -114,7 +114,7 @@ $primary: #EBAB07;
 					font-size: 140px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					font-size: 60px;
 					margin-top: 0px;
 				}
@@ -127,7 +127,7 @@ $primary: #EBAB07;
 			grid-column-start: 3;
 			grid-column-end: 4;
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				display: none;
 			}
 
@@ -167,7 +167,7 @@ $primary: #EBAB07;
 					margin-top: -90px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					margin-left: 100px;
 					font-size: 10px;
 					margin-top: 260px;
@@ -189,7 +189,7 @@ $primary: #EBAB07;
 					top: 260px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					width: 70%;
 					top: 600px;
 					left: 190px;
@@ -204,7 +204,7 @@ $primary: #EBAB07;
 			grid-row-end: 4;
 			background-color: rgba(20, 191, 191, 0);
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				display: none;
 			}
 
@@ -215,7 +215,7 @@ $primary: #EBAB07;
 					margin-top: -90px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					display: none;
 				}
 			}
@@ -233,7 +233,7 @@ $primary: #EBAB07;
 					font-size: 16px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					display: none;
 				}
 			}
@@ -250,7 +250,7 @@ $primary: #EBAB07;
 				margin-top: -180px;
 			}
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				display: none;
 			}
 
@@ -311,7 +311,7 @@ $primary: #EBAB07;
 					margin-left: 70px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					display: none;
 				}
 
@@ -401,7 +401,7 @@ $primary: #EBAB07;
 				width: 33%;
 				background-color: #18181800;
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					display: none;
 				}
 
@@ -455,7 +455,7 @@ $primary: #EBAB07;
 			background-repeat: no-repeat;
 		}
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			background-size: 100%;
 		}
 
@@ -475,7 +475,7 @@ $primary: #EBAB07;
 				font-size: 36px;
 			}
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				font-size: 24px;
 				line-height: 31px;
 				margin-top: 20px;
@@ -493,7 +493,7 @@ $primary: #EBAB07;
 				margin-top: 94px;
 				width: 60%;
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					margin-top: 34px;
 				}
 			}
@@ -560,7 +560,7 @@ $primary: #EBAB07;
 					font-size: 36px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					font-size: 20px;
 					// margin-left: -80px;
 					margin-top: 20px;
@@ -582,7 +582,7 @@ $primary: #EBAB07;
 					font-size: 36px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					font-size: 20px;
 					// margin-left: -50px;
 					margin-top: -30px;
@@ -603,7 +603,7 @@ $primary: #EBAB07;
 					font-size: 18px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					display: none;
 				}
 			}
@@ -630,7 +630,7 @@ $primary: #EBAB07;
 				margin-left: 150px;
 				margin-top: 113px;
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					font-size: 18px;
 					margin-left: 112px;
 					margin-top: -125px;
@@ -644,7 +644,7 @@ $primary: #EBAB07;
 					margin-left: 150px;
 					margin-top: 27px;
 
-					@media screen and (max-width: 500px) {
+					@media screen and (max-width: 800px) {
 						margin-left: 115px;
 						width: 7.976px;
 						height: 7.976px;
@@ -667,7 +667,7 @@ $primary: #EBAB07;
 						font-size: 18px;
 					}
 
-					@media screen and (max-width: 500px) {
+					@media screen and (max-width: 800px) {
 						width: 215px;
 						font-size: 16px;
 					}
@@ -690,7 +690,7 @@ $primary: #EBAB07;
 					font-size: 28px;
 				}
 
-				@media screen and (max-width: 500px) {
+				@media screen and (max-width: 800px) {
 					font-size: 18px;
 					margin-left: 115px;
 				}
@@ -716,7 +716,7 @@ $primary: #EBAB07;
 		position: relative;
 		display: none;
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			display: block;
 		}
 		
@@ -883,7 +883,7 @@ $primary: #EBAB07;
 		background-color: #171717;
 		position: relative;
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			display: none;
 		}
 
@@ -933,7 +933,7 @@ $primary: #EBAB07;
 						margin-left: 119px;
 					}
 
-					// @media screen and (max-width: 500px) {
+					// @media screen and (max-width: 800px) {
 					// 	display: none;
 					// }
 				}
@@ -1144,7 +1144,7 @@ $primary: #EBAB07;
 		grid-column-end: 4;
 		background-color: #181818;
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -1175,7 +1175,7 @@ $primary: #EBAB07;
 			background-image: url('../components/img/15.png');
 		}
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			display: none;
 		}
 
@@ -1341,7 +1341,7 @@ $primary: #EBAB07;
 			text-transform: uppercase;
 			color: #422F01;
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				width: 70%;
 			}
 		}
@@ -1368,7 +1368,7 @@ $primary: #EBAB07;
 			background-clip: text;
 			text-fill-color: transparent;
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				text-align: center;
 				font-family: Montserrat;
 				font-size: 24px;
@@ -1398,7 +1398,7 @@ $primary: #EBAB07;
 				margin-left: 28%;
 			}
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				margin-left: 12%;
 				width: 356px;
 				color: var(--on-bg, #FFF);
@@ -1439,7 +1439,7 @@ $primary: #EBAB07;
 				width: 827px;
 			}
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				font-size: 24px;
 				width: 352px;
 				line-height: normal;
@@ -1493,7 +1493,7 @@ $primary: #EBAB07;
 			-webkit-text-fill-color: transparent;
 			margin-top: 40px;
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				font-size: 24px;
 				width: 267px;
 				font-style: normal;
@@ -1516,7 +1516,7 @@ $primary: #EBAB07;
 	.itemHome12Secret {
 		display: none;
 		
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -1599,7 +1599,7 @@ $primary: #EBAB07;
 		grid-template-columns: 1.7fr 1fr;
 		grid-template-rows: 1000px;
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			display: none;
 		}
 
@@ -1739,7 +1739,7 @@ $primary: #EBAB07;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				font-size: 24px;
 			}
 		}
@@ -1748,7 +1748,7 @@ $primary: #EBAB07;
 	.itemHome14Secret {
 		display: none;
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			display: block;
 			background-color: #000000;
 			grid-column-start: 1;
@@ -1830,7 +1830,7 @@ $primary: #EBAB07;
 		background-color: #000000;
 		display: flex;
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 800px) {
 			display: none;
 		}
 
@@ -1838,7 +1838,7 @@ $primary: #EBAB07;
 			width: 33%;
 			margin-left: 130px;
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 800px) {
 				margin-left: 60px;
 			}
 
@@ -1897,7 +1897,7 @@ $primary: #EBAB07;
 .secret30Jun {
 	display: none;
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 800px) {
 		display: flex;
 
 		.secretPodBlockOne {
@@ -1977,7 +1977,7 @@ $primary: #EBAB07;
 .textOnlineCours {
 	display: none;
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 800px) {
 		display: flex;
 		justify-content: center;
 	}
@@ -1999,7 +1999,7 @@ $primary: #EBAB07;
 .imgSecretBlock {
 	display: none;
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 800px) {
 		display: flex;
 		justify-content: center;
 	}
@@ -2008,7 +2008,7 @@ $primary: #EBAB07;
 .textHowPolittehnologSecret {
 	display: none;
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 800px) {
 		font-family: 'Mulish';
 		font-style: normal;
 		font-weight: 500;
@@ -2024,7 +2024,7 @@ $primary: #EBAB07;
 .blockFlexSecret {
 	display: none;
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 800px) {
 		display: block;
 	}
 
@@ -2078,7 +2078,7 @@ $primary: #EBAB07;
 	margin-top: 40px;
 	height: 900px;
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 800px) {
 		display: none;
 	}
 
@@ -2124,7 +2124,7 @@ $primary: #EBAB07;
 	width: 80%;
 	margin-left: 10%;
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 800px) {
 		display: none;
 	}
 }
@@ -2132,7 +2132,7 @@ $primary: #EBAB07;
 .swiperContainerSecret {
 	display: none;
 
-	@media screen and (max-width: 500px){
+	@media screen and (max-width: 800px){
 		display: block;
 		margin-left: 50px;
 	}
