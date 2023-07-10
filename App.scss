@@ -175,7 +175,7 @@ button {
 }
 
 .contentTypeTabsContainer {
-	background-color: #fff;
+	background-color: #ffffff;
 	margin-top: -20px;
 	height: 969px;
 	border: none;
@@ -567,8 +567,14 @@ button {
 .btnSelectMenuBar {
 	width: 100%;
 	background-color: #F8B50B;
-	display: flex;
+	display: none;
 	justify-content: center;
+
+
+	@media screen and (max-width: 800px) {
+		display: block;
+	}
+
 
 	.selectProg {
 		width: 60%;
@@ -579,6 +585,7 @@ button {
 		font-family: 'Mulish';
 		background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
 		border-radius: 10px;
+
 	
 		.selectModuleBtn {
 			display: flex;
@@ -599,6 +606,11 @@ button {
 
 .blockDivTest {
 	background-color: #f8b50b00;
+	display: none;
+
+	@media screen and (max-width: 800px) {
+		display: block;
+	}
 
 	.selectProg {
 		width: 100%;

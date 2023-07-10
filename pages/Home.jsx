@@ -413,7 +413,6 @@ const Home = () => {
         </div>
       </div>
 
-
       <div className='item4Secret'>
         <div className='blockMarcelHaziev'>
           <div className="imgBlockMarcelText">
@@ -598,40 +597,6 @@ const Home = () => {
             style={{marginLeft: -70, marginTop: 50}}
             className='programmCoursFoto'
           />
-          {/* <div className='blockHomeFive1'>
-            <p className='textHomeFive'>
-              Научишься выстраивать работу предвыборного штаба
-            </p>
-          </div>
-          <div className='blockHomeFive2'>
-            <p className='textHomeFive'>
-              Научишься проводить успешные избирательные кампании
-            </p>
-          </div>
-          <div className='blockHomeFive3'>
-            <p className='textHomeFive'>
-              Научишься использовать авторские методики политтехнологии
-            </p>
-          </div>
-          <div className='blockHomeFive4'>
-            <p className='textHomeFive'>
-              Узнаешь какие грязные методы применяют ваши конкуренты и как их развернуть в свою пользу
-            </p>
-          </div>
-          <div className='blockHomeFive5'>
-            <p className='textHomeFive'>
-              Сможешь избраться депутатом или устроиться в предвыборный штаб высокооплачиваемым политтехнологом
-            </p>
-          </div>
-          <div className='weGaranteed'>
-            <img
-              src={iconEath}
-              className='iconEath'
-            />
-            <p className='weGarantedTextP'>
-              Мы гарантируем конфиденциальность
-            </p>
-          </div> */}
         </div>
       </div>
       <div className='itemHome6'>

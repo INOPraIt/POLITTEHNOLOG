@@ -30,7 +30,7 @@ $primary: #EBAB07;
 	}
 
 	@media screen and (max-width: 800px) {
-		grid-template-rows: 890px 470px 1389px 587px 1300px 1900px 120px 700px 600px 900px 6400px 1000px 900px 789px;
+		grid-template-rows: 890px 470px 1389px 587px 850px 2100px 120px 700px 600px 900px 6400px 1000px 900px 789px;
 	}
 
 	.itemHome1 {
@@ -729,9 +729,10 @@ $primary: #EBAB07;
 			background-color: #000000;
 			border-radius: 24px;
 			border: 1px solid rgb(246, 255, 0);
-			position: absolute;
+			position: relative;
 			top: -70px;
-			height: 710px;
+			height: 670px;
+
 
 			.imgBlockMarcelText {
 				display: flex;
@@ -865,12 +866,13 @@ $primary: #EBAB07;
 				grid-column-start: 2;
 				grid-column-end: 4;
 				grid-row-start: 3;
+				position: relative;
 
 				.marcelFotoSecretOne {
 					width: 80%;
 					border-radius: 0 0 24px 0;
 					margin-left: 20%;
-					margin-top: 4px;
+					margin-top: 62px;
 				}
 			}
 			
