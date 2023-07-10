@@ -879,7 +879,7 @@ $primary: #EBAB07;
 	.itemHome4 {
 		grid-column-start: 1;
 		grid-column-end: 4;
-		background-color: rgb(255, 0, 0);
+		background-color: #171717;
 		position: relative;
 
 		@media screen and (max-width: 500px) {
@@ -1183,6 +1183,14 @@ $primary: #EBAB07;
 			@media screen and (max-width: 1920px) {
 				margin-top: 280px;
 				margin-left: 200px;
+			}
+
+			.programmCoursFoto {
+				width: 60px;
+
+				@media screen and (max-width: 1920px) {
+					width: 1600px;
+				}
 			}
 
 			.textHomeFive {

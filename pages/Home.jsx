@@ -42,6 +42,7 @@ import fotoFourS from '../components/img/fotoStudentsElips/4.png';
 import fotoFiveS from '../components/img/fotoStudentsElips/5.png';
 import fotoSixS from '../components/img/fotoStudentsElips/6.png';
 import secretFotoChes from '../components/img/17.png';
+import imgProgrammFon from '../components/img/programmCours.png'
 
 import fotoSecret11 from '../components/img/11Secret.png';
 // import linkThreeTochki from ''
@@ -275,14 +276,23 @@ const Home = () => {
         </div>
         <div className="blockHomeItem3">
           <p className="textView2minute">
+            
             Посмотрите 2-х
             минутное видео
             про курс
           </p>
+          
+          <a href="#bottom">
+
           <img
             src={twoFoto}
             className="fotoImg"
           />
+          </a>
+          
+          
+          
+          
         </div>
         <div className="blockHomeItem4">
           <img
@@ -316,9 +326,13 @@ const Home = () => {
                   депутатом”
                 </p>
               </div>
+              
               <div className="getCheckList">
-                ПОЛУЧИТЬ ЧЕК-ЛИСТ
+                <a href="#checkList" style={{color: 'grey', textDecoration: 'none'}}>
+                  ПОЛУЧИТЬ ЧЕК-ЛИСТ
+                </a>
               </div>
+             
             </div>
           </div>
           <div className="blockItem5Three">
@@ -328,10 +342,12 @@ const Home = () => {
         </div>
       </div>
       <div className="itemHome2">
+      
         <p className="text2x">
           Посмотрите 2-х минутный ролик о курсе
         </p>
         <div className="classFotoOne">
+        <a name="twoXCours"></a>
           <img
             src={fiveFoto}
             className="fiveFotoOne"
@@ -577,7 +593,12 @@ const Home = () => {
           Программа обучения
         </h1>
         <div className='methodWorks'>
-          <div className='blockHomeFive1'>
+          <img 
+            src={imgProgrammFon}
+            style={{marginLeft: -70, marginTop: 50}}
+            className='programmCoursFoto'
+          />
+          {/* <div className='blockHomeFive1'>
             <p className='textHomeFive'>
               Научишься выстраивать работу предвыборного штаба
             </p>
@@ -610,7 +631,7 @@ const Home = () => {
             <p className='weGarantedTextP'>
               Мы гарантируем конфиденциальность
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='itemHome6'>
@@ -721,6 +742,7 @@ const Home = () => {
 
         <div className='itemHome12Secret'>
           <p className='prezentationTextSecret'>
+          <a name="checkList">CSAEFDSA</a>
             Получить презентацию курса и 
             консультацию специалиста
           </p>
@@ -862,6 +884,7 @@ const Home = () => {
           </p>
           <p style={{ marginTop: 14 }} className='titleTelegram'>
             e-mail: marseldigital407@gmail.com
+            
           </p>
         </div>
       </div>

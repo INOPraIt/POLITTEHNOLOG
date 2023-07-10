@@ -260,7 +260,6 @@ button {
 		grid-column-end: 4;
 		background-color: #222;
 	}
-
 }
 
 .modalCont {
@@ -273,6 +272,10 @@ button {
 	pointer-events: none;
 	transition: 0.5s;
 
+	@media screen and (max-width: 500px) {
+		height: 5000px;
+	}
+
 	.module {
 		width: 50%;
 		height: 500px;
@@ -283,6 +286,13 @@ button {
 		pointer-events: all;
 		transform: scale(0.5);
 		transition: 0.4s;
+
+		@media screen and (max-width: 500px) {
+			width: 90%;
+			margin-left: 5%;
+			height: 650px;
+		}
+
 		
 	
 		.blockDetalis {
@@ -294,6 +304,10 @@ button {
 				color: white;
 				margin-top: 50px;
 				font-family: 'Mulish';
+
+				@media screen and (max-width: 500px) {
+					text-align: center;
+				}
 			}
 	
 			.btnCross {
@@ -504,25 +518,22 @@ button {
 	}
 }
 
-.custom-style {
+.selectProg {
+	width: 60%;
+	margin-left: -18%;
+	height: 60px;
+	text-align: left;
+	padding-left: 20px;
+	font-size: 26px;
+	font-family: 'Mulish';
+	background-color: yellow;
+	border-radius: 10px;
+}
 
-	&__control {
-		background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%) !important;
-		outline: none !important;
-		height: 66px !important;
-		padding-left: 33px !important;
-		font-family: 'Mulish';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 25px;
-		color: #422F01;
-
-		@media screen and (max-width: 500px) {
-			width: 70%;
-			margin-left: -25%;
-		}
-	}
-
-	
+.absoluteBtn {
+	width: 60%;
+	height: 500px;
+	background-color: rgb(255, 242, 0);
+	margin-left: -18%;
+	border-radius: 10px;
 }

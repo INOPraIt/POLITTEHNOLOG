@@ -7,13 +7,7 @@ import Select from 'react-select';
 const Tabs = () => {
 	const [toggleState, setToggleState] = useState(1);
 
-	const options = [
-		{ value: 'chocolate', label: 'Chocolate' },
-		{ value: 'strawberry', label: 'Strawberry' },
-		{ value: 'vanilla', label: 'Vanilla' },
-	];
-
-	const [selectedOption, setSelectedOption] = useState(null);
+	const [select, setSelect] = useState(false)
 
 	const toggleTab = (index) => {
 		setToggleState(index);
@@ -290,12 +284,55 @@ const Tabs = () => {
 	return (
 		<div className="container">
 			<div className="secretBlockTabs">
-				<Select
-					classNamePrefix="custom-style"
-					defaultValue={selectedOption}
-					onChange={setSelectedOption}
-					options={options}
-				/>
+				<div className="selectMenuBar">
+					<button
+						onClick={() => setSelect(prev => !prev)}
+						className="selectProg"
+					>
+						Select
+					</button>
+					{select && 
+						<div className="absoluteBtn">
+							<button
+					className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+					onClick={() => toggleTab(1)}
+				>
+					Модуль 1
+				</button>
+				<button
+					className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+					onClick={() => toggleTab(2)}
+				>
+					Модуль 2
+				</button>
+				<button
+					className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+					onClick={() => toggleTab(3)}
+				>
+					Модуль 3
+				</button>
+				<button
+					className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+					onClick={() => toggleTab(4)}
+				>
+					Модуль 4
+				</button>
+				<button
+					className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
+					onClick={() => toggleTab(5)}
+				>
+					Модуль 5
+				</button>
+				<button
+					className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
+					onClick={() => toggleTab(6)}
+				>
+					Модуль 6
+				</button>
+						</div>
+					}
+					
+				</div>
 			</div>
 			<div className="bloc-tabs">
 				<button
