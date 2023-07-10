@@ -284,23 +284,15 @@ const Tabs = () => {
 	return (
 		<div className="container">
 			<div className="blockDivTest">
-				huihuhuhuhj
-			</div>
-			<div className="secretBlockTabs">
-				<div className="selectMenuBar">
-					{/* <div className="btnSelectMenuBar">
-					<button
-						onClick={() => setSelect(prev => !prev)}
-						className="selectProg"
-					>
-						<div className="selectModuleBtn">
-							<p>
-								Выберете модуль
-							</p>
-						</div>
-					</button>
-					</div>
-					{select &&
+				<button
+					onClick={() => setSelect(prev => !prev)}
+					className="selectProg"
+				>
+					Выберете модуль.
+				</button>
+
+				{select && 
+					<div className="blockSecretSelect">
 						<div className="absoluteBtn">
 							<button
 								className={toggleState === 1 ? "tabsS active-tabsS" : "tabsS"}
@@ -339,6 +331,25 @@ const Tabs = () => {
 								Модуль 6
 							</button>
 						</div>
+					</div>
+				}
+			</div>
+			<div className="secretBlockTabs">
+				<div className="selectMenuBar">
+					{/* <div className="btnSelectMenuBar">
+					<button
+						onClick={() => setSelect(prev => !prev)}
+						className="selectProg"
+					>
+						<div className="selectModuleBtn">
+							<p>
+								Выберете модуль
+							</p>
+						</div>
+					</button>
+					</div>
+					{select &&
+						
 					} */}
 
 				</div>
