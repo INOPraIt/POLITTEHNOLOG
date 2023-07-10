@@ -7,7 +7,7 @@ import Select from 'react-select';
 const Tabs = () => {
 	const [toggleState, setToggleState] = useState(1);
 
-	const [select, setSelect] = useState(false)
+	const [select, setSelect] = useState(false);
 
 	const toggleTab = (index) => {
 		setToggleState(index);
@@ -41,30 +41,30 @@ const Tabs = () => {
 	]
 
 	const arrayTabsResultOne = [
-			{
-				id: 1,
-				title: 'Вы поймете как устроена политическая жизнь внутри регионов и муниципалитетов.',
-			},
-			{
-				id: 2,
-				title: 'Познакомитесь с понятиями сюзерн/вассал, а значит поймете правило политической жизни, о которых не принято говорить.',
-			},
-			{
-				id: 3,
-				title: 'Научитесь выбирать избирательный округ.',
-			},
-			{
-				id: 4,
-				title: 'Научитесь создавать структуру штаба на примере конкретного муниципалитета.',
-			},
-			{
-				id: 5,
-				title: 'Научитесь планировать избирательную  кампанию.',
-			},
-			{
-				id: 6,
-				title: 'Научитесь разрабатывать план-график избирательной кампании с учетом специфики округа.',
-			}
+		{
+			id: 1,
+			title: 'Вы поймете как устроена политическая жизнь внутри регионов и муниципалитетов.',
+		},
+		{
+			id: 2,
+			title: 'Познакомитесь с понятиями сюзерн/вассал, а значит поймете правило политической жизни, о которых не принято говорить.',
+		},
+		{
+			id: 3,
+			title: 'Научитесь выбирать избирательный округ.',
+		},
+		{
+			id: 4,
+			title: 'Научитесь создавать структуру штаба на примере конкретного муниципалитета.',
+		},
+		{
+			id: 5,
+			title: 'Научитесь планировать избирательную  кампанию.',
+		},
+		{
+			id: 6,
+			title: 'Научитесь разрабатывать план-график избирательной кампании с учетом специфики округа.',
+		}
 	]
 
 	const arrayTabsTwo = [
@@ -291,47 +291,47 @@ const Tabs = () => {
 					>
 						Select
 					</button>
-					{select && 
+					{select &&
 						<div className="absoluteBtn">
 							<button
-					className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-					onClick={() => toggleTab(1)}
-				>
-					Модуль 1
-				</button>
-				<button
-					className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-					onClick={() => toggleTab(2)}
-				>
-					Модуль 2
-				</button>
-				<button
-					className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-					onClick={() => toggleTab(3)}
-				>
-					Модуль 3
-				</button>
-				<button
-					className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-					onClick={() => toggleTab(4)}
-				>
-					Модуль 4
-				</button>
-				<button
-					className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
-					onClick={() => toggleTab(5)}
-				>
-					Модуль 5
-				</button>
-				<button
-					className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
-					onClick={() => toggleTab(6)}
-				>
-					Модуль 6
-				</button>
+								className={toggleState === 1 ? "tabsS active-tabsS" : "tabsS"}
+								onClick={() => toggleTab(1)}
+							>
+								Модуль 1
+							</button>
+							<button
+								className={toggleState === 2 ? "tabsS active-tabsS" : "tabsS"}
+								onClick={() => toggleTab(2)}
+							>
+								Модуль 2
+							</button>
+							<button
+								className={toggleState === 3 ? "tabsS active-tabsS" : "tabsS"}
+								onClick={() => toggleTab(3)}
+							>
+								Модуль 3
+							</button>
+							<button
+								className={toggleState === 4 ? "tabsS active-tabsS" : "tabsS"}
+								onClick={() => toggleTab(4)}
+							>
+								Модуль 4
+							</button>
+							<button
+								className={toggleState === 5 ? "tabsS active-tabsS" : "tabsS"}
+								onClick={() => toggleTab(5)}
+							>
+								Модуль 5
+							</button>
+							<button
+								className={toggleState === 6 ? "tabsS active-tabsS" : "tabsS"}
+								onClick={() => toggleTab(6)}
+							>
+								Модуль 6
+							</button>
 						</div>
 					}
-					
+
 				</div>
 			</div>
 			<div className="bloc-tabs">
