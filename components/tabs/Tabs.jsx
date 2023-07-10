@@ -283,9 +283,12 @@ const Tabs = () => {
 
 	return (
 		<div className="container">
+			<div className="blockDivTest">
+				huihuhuhuhj
+			</div>
 			<div className="secretBlockTabs">
 				<div className="selectMenuBar">
-					<div className="btnSelectMenuBar">
+					{/* <div className="btnSelectMenuBar">
 					<button
 						onClick={() => setSelect(prev => !prev)}
 						className="selectProg"
@@ -294,9 +297,6 @@ const Tabs = () => {
 							<p>
 								Выберете модуль
 							</p>
-							<img 
-								src=""
-							/>
 						</div>
 					</button>
 					</div>
@@ -339,7 +339,7 @@ const Tabs = () => {
 								Модуль 6
 							</button>
 						</div>
-					}
+					} */}
 
 				</div>
 			</div>
@@ -633,7 +633,9 @@ const Tabs = () => {
 						<div className="contentTypeTabsOne">
 							<div className="contOne">
 								<div>
-									<p className="blockOneHeader">Как прокачать узнаваемость без лишних затрат</p>
+									<p className="blockOneHeader">
+										Как прокачать узнаваемость без лишних затрат
+									</p>
 									<div>
 										{arrayTabsSix.map(k =>
 											<div className="arrayTabsCont">

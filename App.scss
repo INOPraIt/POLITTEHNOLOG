@@ -206,6 +206,7 @@ button {
 			grid-template-rows: 586px 200px;
 			height: 200px;
 			width: 70%;
+			margin-top: 300px;
 		}
 
 		.contOne {
@@ -564,8 +565,10 @@ button {
 }
 
 .btnSelectMenuBar {
+	width: 100%;
+	background-color: #F8B50B;
 	display: flex;
-	
+	justify-content: center;
 
 	.selectProg {
 		width: 60%;
@@ -592,4 +595,9 @@ button {
 	margin-left: -18%;
 	border-radius: 10px;
 	overflow-y: auto;
+}
+
+
+.blockDivTest {
+	background-color: #F8B50B;
 }
