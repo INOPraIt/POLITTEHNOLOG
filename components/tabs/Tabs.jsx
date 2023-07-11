@@ -380,10 +380,12 @@ const Tabs = () => {
 					Модуль 4
 				</button>
 				<button
-					className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
+					className={toggleState === 5 ? "tabsFI active-tabsFI" : "tabsFI"}
 					onClick={() => toggleTab(5)}
 				>
+					<p className={toggleState === 5 ? "moduleTextFive active-moduleTextFive" : "moduleTextFive"}>
 					Модуль 5
+					</p>
 				</button>
 				<button
 					className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
@@ -422,7 +424,7 @@ const Tabs = () => {
 								<div>
 									<p className="blockOneHeaderTwo">Результат</p>
 									<div>
-										{arrayTabsOne.map(k =>
+										{arrayTabsResultOne.map(k =>
 											<div className="arrayTabsCont">
 												<img
 													src={two}
@@ -596,7 +598,11 @@ const Tabs = () => {
 						<div className="contentTypeTabsOne">
 							<div className="contOne">
 								<div>
-									<p className="blockOneHeader">Как прокачать узнаваемость без лишних затрат</p>
+									<p className="blockOneHeader">
+										ЗОЛОТОЙ МОДУЛЬ “От <br />
+										правозащитника ЖКХ - в депутаты” или выигрышная избирательная<br /> 
+										кампания за 70 тысяч рублей.
+									</p>
 									<div>
 										{arrayTabsFive.map(k =>
 											<div className="arrayTabsCont">

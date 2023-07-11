@@ -84,6 +84,41 @@ body {
 	background-color: #000000;
 }
 
+.tabsFI {
+	padding: 15px;
+	text-align: center;
+	width: 50%;
+	background: rgba(128, 128, 128, 0);
+	color: #F8B50B;
+	box-sizing: content-box;
+	position: relative;
+	outline: none;
+	color: #000000;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	cursor: pointer;
+	border: none;
+}
+
+.moduleTextFive {
+	
+cursor: pointer;
+background-image: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.active-moduleTextFive {
+	cursor: pointer;
+background-image: linear-gradient(111.57deg, rgb(0, 0, 0) 35.83%, rgb(0, 0, 0) 77.98%), linear-gradient(106.88deg, #000000 37.26%, rgb(0, 0, 0) 77.88%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
 .tabs {
 	padding: 15px;
 	text-align: center;
@@ -105,6 +140,13 @@ body {
 
 .active-tabsS {
 	background: white;
+	color: #222;
+	border: none;
+	border-radius: 10 10 0 0;
+}
+
+.active-tabsFI {
+	background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
 	color: #222;
 	border: none;
 	border-radius: 10 10 0 0;
@@ -218,6 +260,7 @@ button {
 			grid-row-end: 2;
 			background-color: rgb(255, 255, 255);
 			width: 90%;
+			border-radius: 10px;
 
 			@media screen and (max-width: 1000px) {
 				width: 100%;
@@ -236,10 +279,15 @@ button {
 
 		.blockOneHeader {
 			font-family: 'Montserrat';
-			font-size: 22px;
+			font-size: 20px;
 			color: #181818;
 			margin-top: 34px;
 			margin-left: 35px;
+			width: 90%;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 133.9%;
+			text-transform: uppercase;
 		}
 	}
 
