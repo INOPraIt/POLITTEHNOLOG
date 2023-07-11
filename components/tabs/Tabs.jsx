@@ -401,6 +401,7 @@ const Tabs = () => {
 					className={toggleState === 1 ? "content  active-content" : "content"}
 				>
 					<div className="contentTypeTabsContainer">
+						huhuih
 						<div className="contentTypeTabsOne">
 							<div className="contOne">
 								<div>
@@ -438,7 +439,7 @@ const Tabs = () => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> 
 					</div>
 				</div>
 
