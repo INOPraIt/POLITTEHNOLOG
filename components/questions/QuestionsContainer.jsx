@@ -84,9 +84,4 @@ const QuestionsContainer = () => {
 	)
 }
 
-
-
 export default QuestionsContainer;
-
-
-// onClick={() => toogleSecret(l.id)}

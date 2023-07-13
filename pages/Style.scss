@@ -30,7 +30,12 @@ $primary: #EBAB07;
 	}
 
 	@media screen and (max-width: 800px) {
+		max-width: 800px;
 		grid-template-rows: 890px 470px 1389px 587px 850px 2100px 120px 700px 600px 900px 6400px 1000px 900px 789px;
+	}
+
+	@media screen and (max-width: 500px) {
+		max-width: 414px;
 	}
 
 	.itemHome1 {
