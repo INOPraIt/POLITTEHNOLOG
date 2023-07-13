@@ -1,57 +1,92 @@
 import React from 'react';
-import QuestionsCard from './questionsCard';
+import './Style.scss';
+// import QuestionsList from './components/QuestionsList';
 
-const questionsContainer = () => {
+const QuestionsContainer = () => {
 
-	const [one, setOne] = React.useState(false);
-
-	const arrayQuestions = [
+	let [secret, setSecret] = React.useState([
 		{
 			id: 1,
 			question: 'На какой платформе будут проходить уроки?',
-			secretQuestionsOne: one,
+			secret: false,
 			answer: 'Все уроки вы можете приобрести в формате записи полноценного курса, который проходил онлайн для одного из субъектов РФ. Этот курс - настольная методичка, как выиграть на выборах с разбором каждого этапа простыми словами. ',
 		},
 		{
 			id: 2,
 			question: 'Я точно сделаю результат после проекта?',
-			secretQuestionsOne: one,
+			secret: false,
 			answer: 'Каждый этап- авторский,  основанный на практическом опыте работы политтехнолога Марселя Хазиева. В курс вошли только работающие механизмы. Приобретая курс, вы выигрываете время пути получения опыта и разработки авторской методики, а значит экономите и немаленькие средства. Результат будет колоссальный. Зависит только,  как вы примените этот результат: пойдёте сами в депутаты или будете работать в тени политтехнологом, отвечать за политические вопросы политических лидеров.',
 		},
 		{
 			id: 3,
 			question: 'Я купил, но мне не пришел доступ, что делать?',
-			secretQuestionsOne: one,
+			secret: false,
 			answer: 'В случае если вдруг вам не во время пришёл курс на указанную вами электронную почту, вы можете смело написать нам на электронную почту marseldigital407@gmail.com или в телеграм @marsel_khaziev и мы  ответим Вам в течение рабочего дня. Если вдруг не пришёл доступ к курсу или сам курс, значит это по технической случайности. Но таких моментов ещё не было. ',
 		},
 		{
 			id: 4,
 			question: 'Как часто будут уроки?',
-			secretQuestionsOne: one,
+			secret: false,
 			answer: 'Всего 6 модулей в курсе Политтехнолог 2.0. Лучше всего проходить 1 модуль в две недели. Если времени нет. То 1 модуль в неделю, потому что между модулями нужно делать домашние задания, которые только подкрепят знания. Кстати, для обратной связи вашего домашнего задания вы можете отправить его на электронную почту и мы дадим ей оценку с фактурными советами, что исправить. Для нас это одно удовольствие, следить за работой наших учеников и направлять их. Обратная связь- лучшая для нас оценка нашей работы. Почта всё та же marseldigital407@gmail.com или телеграм @marsel_khaziev',
 		},
 		{
 			id: 5,
 			question: 'Сколько времени понадобится до избирательной кампании?',
-			secretQuestionsOne: one,
+			secret: false,
 			answer: 'Лучше всего начинать проходить курс за 1 год до дня выборов. Это желательно, но не обязательно. Были случаи, когда мы включались и за 2 месяца до выборов, и кандидат становился депутатом. Но комфортно, начать всё за 1, а может и за 2 года.',
 		},
-	];
+	]);
+
+	console.log(secret);
+
+	const xray = [
+		{ id: 1, point: 'csedfsdf' },
+		{ id: 2, point: 'km' },
+		{ id: 3, point: 'k[pop' },
+		{ id: 4, point: 'fghtf' },
+	]
+
+	function toogleSecret(id) {
+		setSecret(secret.map((k, v) => {
+			if (k.id === id) {
+				console.log('HI');
+				k.secret = !k.secret
+			}
+			return k;
+		}))
+	}
 
 	return (
-		<div>
-			{arrayQuestions.map(k =>
-				<div>
-					<QuestionsCard
-						one={one}
-						question={k.question}
-						answer={k.answer}
-						setOne={setOne}
-					/>
+		<div className='blocOutSecretQuestions'>
+			{secret.map(l =>
+				<div >
+				<hr  className='lineBottom'/>
+					<div className='blockContent'>
+
+						<p className='textAreu'>
+							{l.question}
+						</p>
+						<button className="btnPlus" onClick={() => toogleSecret(l.id)}>
+							<p className={l.secret == false ? "textPlus" : "textPlus-active"}>
+								+
+							</p>
+						</button>
+					</div>
+
+				{l.secret &&
+					<p className='textSecret'>{l.answer}</p>
+				}
+					
 				</div>
 			)}
+		<hr className='lineBottom'/>
 		</div>
 	)
 }
 
-export default questionsContainer;
+
+
+export default QuestionsContainer;
+
+
+// onClick={() => toogleSecret(l.id)}

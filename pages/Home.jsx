@@ -25,7 +25,7 @@ import formatTwo from '../components/img/cours/2.png';
 import formatThree from '../components/img/cours/3.png';
 import PriceTarif from '../components/priceTarif/PriceTarif';
 import onyOne from '../components/img/14.png';
-import Questions from '../components/questions/Questions';
+import QuestionsContainer from '../components/questions/QuestionsContainer';
 import logoOne from '../components/img/logo/1.png';
 import logoTwo from '../components/img/logo/2.png';
 import fotoOne from '../components/img/fotoStudents/one.png';
@@ -43,7 +43,7 @@ import fotoFiveS from '../components/img/fotoStudentsElips/5.png';
 import fotoSixS from '../components/img/fotoStudentsElips/6.png';
 import secretFotoChes from '../components/img/17.png';
 import imgProgrammFon from '../components/img/programmCours.png';
-import imgRombsStudents from '../components/img/20.png'
+import imgRombsStudents from '../components/img/20.png';
 
 import fotoSecret11 from '../components/img/11Secret.png';
 // import linkThreeTochki from ''
@@ -227,6 +227,7 @@ const Home = () => {
       text: 'В 2021 году избран депутатом Калининского района Челябинска от СР.'
     },
   ]
+
 
   return (
     <div className="containerHome">
@@ -694,7 +695,7 @@ const Home = () => {
       <div className='itemHome9'>
         <p className='stopingText'>
           После окончания курса вы получите
-          сертификат нашей школы
+          специализированный сертификат.
         </p>
         <img
           src={fotoSertificats}
@@ -783,7 +784,7 @@ const Home = () => {
           Часто задаваемые вопросы
         </p>
         <div>
-          <Questions />
+          <QuestionsContainer />
         </div>
       </div>
 
