@@ -67,7 +67,7 @@ const SlideTwo = () => {
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/3OyDMtK_CCM'
+          		url='https://www.youtube.com/shorts/uSlg-1eW5uA'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}
@@ -131,7 +131,7 @@ const SlideTwo = () => {
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/3OyDMtK_CCM'
+          		url='https://www.youtube.com/shorts/uSlg-1eW5uA'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}

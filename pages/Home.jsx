@@ -278,7 +278,6 @@ const Home = () => {
         </div>
         <div className="blockHomeItem3">
           <p className="textView2minute">
-            
             Посмотрите 2-х
             минутное видео
             про курс

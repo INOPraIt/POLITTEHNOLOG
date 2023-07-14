@@ -2,8 +2,7 @@ import React from 'react';
 import './Style.scss';
 
 const SaleTarifBtn = ({
-  func,
-  link
+  func
 }) => {
   return (
     <div>

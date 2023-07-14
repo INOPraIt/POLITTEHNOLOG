@@ -73,7 +73,7 @@ const PriceTarif = () => {
 
     axios.post("https://securepay.tinkoff.ru/v2/Init", {
       "TerminalKey": "TinkoffBankTest",
-      "Amount": 200000,
+      "Amount": 2000000,
       "OrderId": `${idThree}`,
       "Description": "Тариф Цезарь",
       "DATA": {
@@ -88,9 +88,9 @@ const PriceTarif = () => {
         "Items": [
           {
             "Name": "Тариф Цезарь",
-            "Price": 200000,
+            "Price": 2000000,
             "Quantity": 1.00,
-            "Amount": 200000,
+            "Amount": 2000000,
             "PaymentMethod": "full_prepayment",
             "PaymentObject": "commodity",
             "Tax": "vat10",
@@ -419,11 +419,9 @@ const PriceTarif = () => {
           <p className='newPrice'>20.000р</p>
           <SaleTarifBtn
             func={saleTarifChezar}
-            link={linkOne}
           />
           <CreditBtn 
             func={saleForCreditOne}
-            link={linkOne}
           />
           <PromoInput />
         </div>
@@ -472,11 +470,9 @@ const PriceTarif = () => {
           <p className='newPrice'>50.000р</p>
           <SaleTarifBtn
             func={saleTarifSharlDeGol}
-            link={linkOne}
           />
           <CreditBtn 
             func={saleForCreditTwo}
-            link={linkOne}
           />
           <PromoInput />
         </div>
@@ -531,11 +527,9 @@ const PriceTarif = () => {
           <p className='newPrice'>70.000р</p>
           <SaleTarifBtn
             func={saleTarifCherchil}
-            link={linkOne}
           />
           <CreditBtn 
             func={saleForCreditThree}
-            link={linkOne}
           />
           <PromoInput />
         </div>
@@ -617,12 +611,10 @@ const PriceTarif = () => {
                 <p className='newPrice'>120.000р</p>
                 <SaleTarifBtn
                   func={saleTarifVip}
-                  link={linkOne}
-                />
+                      />
                 <CreditBtn 
                   func={saleForCreditFour}
-                  link={linkOne}
-                />
+                      />
                 <PromoInput />
               </div>
             </div>
