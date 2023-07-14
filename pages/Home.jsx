@@ -285,11 +285,11 @@ const Home = () => {
           </p>
           
           <a href="#bottom">
-
+{/* 
           <img
             src={twoFoto}
             className="fotoImg"
-          />
+          /> */}
           </a>=
         </div>
         <div className="blockHomeItem4">
