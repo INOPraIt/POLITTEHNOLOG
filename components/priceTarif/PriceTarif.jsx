@@ -50,6 +50,7 @@ const PriceTarif = () => {
 
   console.log(email);
   console.log(mobilePhone);
+  console.log(email);
 
   const notify = () => toast('Заполните все данные!', {
     position: "top-right",
@@ -66,29 +67,30 @@ const PriceTarif = () => {
     e.preventDefault();
   };
 
-  function saleTarifChezar() {
+  function saleTarifChezar(event) {
     setModal(prev => !prev);
+    event.preventDefault();
 
     axios.post("https://securepay.tinkoff.ru/v2/Init", {
-      "TerminalKey": "TinkoffBankTest", // Тут ваш TerminalKey
-      "Amount": 2000000,
+      "TerminalKey": "TinkoffBankTest",
+      "Amount": 200000,
       "OrderId": `${idThree}`,
       "Description": "Тариф Цезарь",
       "DATA": {
         "Phone": mobilePhone,
-        "Email": email,
+        "Email": email
       },
       "Receipt": {
-        "Email": email,
+        "Email": "ryzevdmitrij@gmail.com",
         "Phone": mobilePhone,
-        "EmailCompany": "ryzevdmitrij@gmail.com", // Ваш email
+        "EmailCompany": email,
         "Taxation": "osn",
         "Items": [
           {
             "Name": "Тариф Цезарь",
-            "Price": 2000000,
+            "Price": 200000,
             "Quantity": 1.00,
-            "Amount": 2000000,
+            "Amount": 200000,
             "PaymentMethod": "full_prepayment",
             "PaymentObject": "commodity",
             "Tax": "vat10",
@@ -115,15 +117,15 @@ const PriceTarif = () => {
       "TerminalKey": "TinkoffBankTest",
       "Amount": 5000000,
       "OrderId": `${idThree}`,
-      "Description": "Тариф Черчиль",
+      "Description": "Тариф Шарль Де Голь",
       "DATA": {
         "Phone": mobilePhone,
         "Email": email
       },
       "Receipt": {
-        "Email": email,
+        "Email": "ryzevdmitrij@gmail.com",
         "Phone": mobilePhone,
-        "EmailCompany": "ryzevdmitrij@gmail.com",
+        "EmailCompany": email,
         "Taxation": "osn",
         "Items": [
           {
@@ -154,7 +156,7 @@ const PriceTarif = () => {
       "TerminalKey": "TinkoffBankTest",
       "Amount": 7000000,
       "OrderId": `${idThree}`,
-      "Description": "Тариф Шарль Де Голь",
+      "Description": "Тариф Черчиль",
       "DATA": {
         "Phone": mobilePhone,
         "Email": email
@@ -192,16 +194,16 @@ const PriceTarif = () => {
     axios.post("https://securepay.tinkoff.ru/v2/Init", {
       "TerminalKey": "TinkoffBankTest",
       "Amount": 12000000,
-      "OrderId": `${idFour}`,
-      "Description": "Премиальный",
+      "OrderId": `${idThree}`,
+      "Description": "Тариф Vip",
       "DATA": {
-        "Phone": `${mobilePhone}`,
+        "Phone": mobilePhone,
         "Email": email
       },
       "Receipt": {
         "Email": "ryzevdmitrij@gmail.com",
-        "Phone": `${mobilePhone}`,
-        "EmailCompany": `${email}`,
+        "Phone": mobilePhone,
+        "EmailCompany": email,
         "Taxation": "osn",
         "Items": [
           {

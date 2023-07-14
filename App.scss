@@ -261,6 +261,7 @@ button {
 			background-color: rgb(255, 255, 255);
 			width: 90%;
 			border-radius: 10px;
+			overflow: auto;
 
 			@media screen and (max-width: 1000px) {
 				width: 100%;
@@ -299,6 +300,7 @@ button {
 		grid-row-end: 2;
 		background-color: #000000;
 		height: 900px;
+		overflow: auto;
 		border-radius: 10px;
 
 		@media screen and (max-width: 1000px) {
