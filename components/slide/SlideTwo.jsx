@@ -27,47 +27,52 @@ const SlideTwo = () => {
 				<SwiperSlide style={{width: '200px'}}>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/qFm3voMqbr0'
 							width={'90%'}
           		height='600px'
 							style={{ marginTop: '100px'}}
         		/>
+						false
 					</SwiperSlide>
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/TRGKwYpzHOU'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}
         		/>
+						fsefs
 					</SwiperSlide>
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/tdCuoq1ASwE'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}
         		/>
+						fsefesf
 					</SwiperSlide>
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/3OyDMtK_CCM'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}
         		/>
+						fsefesf
 					</SwiperSlide>
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/3OyDMtK_CCM'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}
         		/>
+						fsfsef
 					</SwiperSlide>
 			</Swiper>
 			</div>
@@ -86,7 +91,7 @@ const SlideTwo = () => {
 				<SwiperSlide style={{width: '200px'}}>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/qFm3voMqbr0'
 							width={'90%'}
           		height='600px'
 							style={{ marginTop: '100px'}}
@@ -96,7 +101,7 @@ const SlideTwo = () => {
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/TRGKwYpzHOU'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}
@@ -106,7 +111,7 @@ const SlideTwo = () => {
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/tdCuoq1ASwE'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}
@@ -116,7 +121,7 @@ const SlideTwo = () => {
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/3OyDMtK_CCM'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}
@@ -126,7 +131,7 @@ const SlideTwo = () => {
 					<SwiperSlide>
 						<ReactPlayer
     					className='react-player'
-          		url='https://www.youtube.com/shorts/N_nlo4qjjO0'
+          		url='https://www.youtube.com/shorts/3OyDMtK_CCM'
 							width={'90%'}
           		height='600px'
 							style={{marginTop: '100px'}}
