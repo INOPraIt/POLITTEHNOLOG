@@ -409,7 +409,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsOne.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={one}
 													className="imgOne"
 												/>
@@ -427,7 +427,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultOne.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={two}
 													className="imgTwo"
 												/>
@@ -456,7 +456,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsTwo.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={one}
 													className="imgOne"
 												/>
@@ -474,7 +474,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultTwo.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={two}
 													className="imgTwo"
 												/>
@@ -505,7 +505,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsThree.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={one}
 													className="imgOne"
 												/>
@@ -523,7 +523,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultThree.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={two}
 													className="imgTwo"
 												/>
@@ -555,7 +555,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsFour.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={one}
 													className="imgOne"
 												/>
@@ -573,7 +573,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultFour.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={two}
 													className="imgTwo"
 												/>
@@ -595,7 +595,7 @@ const Tabs = () => {
 				<div
 					className={toggleState === 5 ? "content  active-content" : "content"}
 				>
-					<div className="contentTypeTabsContainer">
+					<div className="c">
 						<div className="contentTypeTabsOne">
 							<div className="contOne">
 								<div>
@@ -607,7 +607,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsFive.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={one}
 													className="imgOne"
 												/>
@@ -625,7 +625,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultFive.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={two}
 													className="imgTwo"
 												/>
@@ -657,7 +657,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsSix.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={one}
 													className="imgOne"
 												/>
@@ -675,7 +675,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultSix.map(k =>
 											<div className="arrayTabsCont">
-												<img style={{backgroundColor: 'red'}}
+												<img 
 													src={two}
 													className="imgTwo"
 												/>

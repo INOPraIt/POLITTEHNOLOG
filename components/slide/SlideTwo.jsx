@@ -10,31 +10,6 @@ import five from '../img/videoZaglush/5.png';
 import ReactPlayer from 'react-player'
 
 const SlideTwo = () => {
-
-	const arrayFoto = [
-		{
-			id: 1,
-			link: 'https://www.youtube.com/shorts/N_nlo4qjjO0',
-		},
-		{
-			id: 2,
-			img: 'https://www.youtube.com/watch?v=g6m9qADnO9A&t=247s',
-		},
-		{
-			id: 3,
-			img: 'https://www.youtube.com/watch?v=g6m9qADnO9A&t=247s',
-		},
-		{
-			id: 4,
-			img: 'https://www.youtube.com/watch?v=g6m9qADnO9A&t=247s',
-		},
-		{
-			id: 5,
-			img: 'https://www.youtube.com/watch?v=g6m9qADnO9A&t=247s',
-		},
-	]
-
-
 	return (
 		<div>
 			<div className='swiperContainerSecret'>
@@ -57,7 +32,6 @@ const SlideTwo = () => {
           		height='600px'
 							style={{ marginTop: '100px'}}
         		/>
-							kljfkirfik
 					</SwiperSlide>
 					<SwiperSlide>
 						<ReactPlayer
@@ -67,7 +41,6 @@ const SlideTwo = () => {
           		height='600px'
 							style={{marginTop: '100px'}}
         		/>
-							kljfkirfik
 					</SwiperSlide>
 					<SwiperSlide>
 						<ReactPlayer
@@ -77,7 +50,6 @@ const SlideTwo = () => {
           		height='600px'
 							style={{marginTop: '100px'}}
         		/>
-							kljfkirfik
 					</SwiperSlide>
 					<SwiperSlide>
 						<ReactPlayer
@@ -87,7 +59,6 @@ const SlideTwo = () => {
           		height='600px'
 							style={{marginTop: '100px'}}
         		/>
-							kljfkirfik
 					</SwiperSlide>
 					<SwiperSlide>
 						<ReactPlayer
@@ -97,7 +68,6 @@ const SlideTwo = () => {
           		height='600px'
 							style={{marginTop: '100px'}}
         		/>
-							kljfkirfik
 					</SwiperSlide>
 			</Swiper>
 			</div>

@@ -391,14 +391,14 @@ const PriceTarif = () => {
   return (
     <div className='containerPriceTarif'>
       <div className='itemCezar'>
-        <img style={{backgroundColor: 'red'}}
+        <img 
           src={one}
           className='imgCezar'
         />
         <div className='tarifCezar'>
           <div className='blockTarifCezar'>
             <div className='quantityBlock'>
-              <img style={{backgroundColor: 'red'}}
+              <img 
                 src={childrenIcons}
                 className='imgChildren'
               />
@@ -429,14 +429,14 @@ const PriceTarif = () => {
         </div>
       </div>
       <div className='itemCharlDeGol'>
-        <img style={{backgroundColor: 'red'}}
+        <img 
           src={two}
           className='imgCharlDeGol'
         />
         <div className='tarifCharlDeGol'>
           <div className='blockTarifCezar'>
             <div className='quantityBlock'>
-              <img style={{backgroundColor: 'red'}}
+              <img 
                 src={childrenIcons}
                 className='imgChildren'
               />
@@ -482,14 +482,14 @@ const PriceTarif = () => {
         </div>
       </div>
       <div className='itemCherchil'>
-        <img style={{backgroundColor: 'red'}}
+        <img 
           src={three}
           className='imgCherchil'
         />
         <div className='tarifCherchil'>
           <div className='blockTarifCezar'>
             <div className='quantityBlock'>
-              <img style={{backgroundColor: 'red'}}
+              <img 
                 src={childrenIcons}
                 className='imgChildren'
               />
@@ -643,7 +643,7 @@ const PriceTarif = () => {
               onClick={() => setModal(prev => !prev)}
               className='btnCross'
             >
-              <img style={{backgroundColor: 'red'}}
+              <img 
                 src={btnCross}
                 className='imgBtnCross'
               />
