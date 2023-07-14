@@ -107,7 +107,7 @@ const SlideOne = () => {
 									{k.name}
 								</div>
 								<div className='imgStudentsBlock'>
-									<img
+									<img style={{backgroundColor: 'red'}}
 										src={k.img}
 										className='imgStudents'
 									/>

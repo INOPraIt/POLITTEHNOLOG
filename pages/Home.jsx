@@ -252,7 +252,7 @@ const Home = () => {
             ПОЛИТТЕХНОЛОГ 2.0
           </h1>
           <div className='imgSecretBlock'>
-            <img
+            <img style={{backgroundColor: 'red'}}
               className="imgItem4King"
               src={threeFoto}
             />
@@ -271,7 +271,7 @@ const Home = () => {
           </p>
         </div>
         <div className='fotoMarcel'>
-          <img
+          <img style={{backgroundColor: 'red'}}
             src={oneFoto}
             className="photo"
           />
@@ -297,7 +297,7 @@ const Home = () => {
           
         </div>
         <div className="blockHomeItem4">
-          <img
+          <img style={{backgroundColor: 'red'}}
             className="imgItem4KingSecret"
             src={threeFoto}
           />
@@ -314,7 +314,7 @@ const Home = () => {
           </div>
           <div className="blockItem5Two">
             <div className="checkListBlock">
-              <img
+              <img style={{backgroundColor: 'red'}}
                 src={fourFoto}
                 className="imgCenterOne"
               />
@@ -349,10 +349,10 @@ const Home = () => {
         </p>
         <div className="classFotoOne">
         <a name="twoXCours"></a>
-          <img
+          <img style={{backgroundColor: 'blue'}}
             src={fiveFoto}
             className="fiveFotoOne"
-          />
+          /> 
           <div className="btnGold">
             <p className="seeCurs">
               Записаться на курс
@@ -382,7 +382,7 @@ const Home = () => {
           {arrayProgOne.map(k =>
             <div key={k.id} className="arrayOne">
               <div>
-                <img
+                <img style={{backgroundColor: 'red'}}
                   src={iconOne}
                   className="iconOne"
                 />
@@ -399,7 +399,7 @@ const Home = () => {
           {arrayProgTwo.map(k =>
             <div key={k.id} className="arrayOne">
               <div>
-                <img
+                <img style={{backgroundColor: 'red'}}
                   src={iconTwo}
                   className="iconOne"
                 />
@@ -418,7 +418,7 @@ const Home = () => {
         <div className='blockMarcelHaziev'>
           <div className="imgBlockMarcelText">
             <div>
-              <img
+              <img style={{backgroundColor: 'red'}}
                 src={iconThree}
                 className="imgClass1"
               />
@@ -428,7 +428,7 @@ const Home = () => {
               и региональных кампаний
             </p>
             <div>
-              <img
+              <img style={{backgroundColor: 'red'}}
                 src={iconFour}
                 className="imgClass2"
               />
@@ -440,7 +440,7 @@ const Home = () => {
               марсель хазиев
             </h5>
           </div>
-          <img
+          <img style={{backgroundColor: 'red'}}
             src={sixFoto}
             className="sixFotoMarcelHazievOne"
           />
@@ -459,7 +459,7 @@ const Home = () => {
           <div className='blockMarcelHazievThree'>
               {arrayFour.map(k =>
                 <div className="textDeputatOneSecret">
-                  <img
+                  <img style={{backgroundColor: 'red'}}
                     src={iconSeven}
                     className="imgCheckSecret"
                   />
@@ -471,7 +471,7 @@ const Home = () => {
               <div className='arraySecurity'>
               {arrayThree.map(k =>
                 <div className="arrayThreeSecret">
-                  <img
+                  <img style={{backgroundColor: 'red'}}
                     src={k.img}
                     className="imgLinksSecret"
                   />
@@ -483,7 +483,7 @@ const Home = () => {
               </div>
           </div>
           <div className='blockMarcelHazievFour'>
-            <img 
+            <img style={{backgroundColor: 'red'}} 
               src={fotoSecret11}
               className='marcelFotoSecretOne'
             />
@@ -498,7 +498,7 @@ const Home = () => {
           <div className='columnItem4One'>
             <div className="imgTextImgFlex">
               <div>
-                <img
+                <img style={{backgroundColor: 'red'}}
                   src={iconThree}
                   className="imgClass1"
                 />
@@ -508,7 +508,7 @@ const Home = () => {
                 и региональных кампаний
               </p>
               <div>
-                <img
+                <img style={{backgroundColor: 'red'}}
                   src={iconFour}
                   className="imgClass2"
                 />
@@ -517,7 +517,7 @@ const Home = () => {
             <div>
               <p className='marcelTextHeader'>марсель хазиев</p>
             </div>
-            <img
+            <img style={{backgroundColor: 'red'}}
               src={sixFoto}
               className="sixFoto"
             />
@@ -538,7 +538,7 @@ const Home = () => {
               </p>
             </div>
             <div className='fotoMarcelOne'>
-              <img
+              <img style={{backgroundColor: 'red'}}
                 src={sevenFoto}
                 className="sevenFotoOne"
               />
@@ -546,7 +546,7 @@ const Home = () => {
             <div className="linksMarcel">
               {arrayThree.map(k =>
                 <div className="arrayThree">
-                  <img
+                  <img style={{backgroundColor: 'red'}}
                     src={k.img}
                     className="imgLinks"
                   />
@@ -561,7 +561,7 @@ const Home = () => {
             <div className="blockDeputatOne">
               {arrayFour.map(k =>
                 <div className="textDeputatOne">
-                  <img
+                  <img style={{backgroundColor: 'red'}}
                     src={iconSeven}
                     className="imgCheck"
                   />
@@ -581,7 +581,7 @@ const Home = () => {
           Программа обучения
         </p>
         <div className='imgProgramm'>
-          <img 
+          <img style={{backgroundColor: 'red'}} 
             src={secretProgramm}
             className='secretProgrammImg'
           />
@@ -594,7 +594,7 @@ const Home = () => {
           Программа обучения
         </h1>
         <div className='methodWorks'>
-          <img 
+          <img style={{backgroundColor: 'red'}} 
             src={imgProgrammFon}
             className='programmCoursFoto'
           />
@@ -633,7 +633,7 @@ const Home = () => {
             {arrayCasesStudentsSecret.map(k =>
                 <SwiperSlide>
                   <div className='blockFotoStudentsS'>
-                    <img 
+                    <img style={{backgroundColor: 'red'}} 
                       className='studentsLinkSecret'
                       src={k.imgLink}
                     />
@@ -669,13 +669,13 @@ const Home = () => {
                       <p className='textHeaderStudents'>{k.title}</p>
                     </div>
                     <div className='imgStudentsDiv'>
-                    <img
+                    <img style={{backgroundColor: 'red'}}
                       className='imgSrcStudents'
                       src={k.imgLink}
                     />
                     </div>
                     <div className='rombsBlock'>
-                      <img 
+                      <img style={{backgroundColor: 'red'}} 
                         src={imgRombsStudents}
                         className='imgRombs'
                       />
@@ -697,7 +697,7 @@ const Home = () => {
           После окончания курса вы получите
           специализированный сертификат.
         </p>
-        <img
+        <img style={{backgroundColor: 'red'}}
           src={fotoSertificats}
           className='imgFotoSertificats'
         />
@@ -740,7 +740,7 @@ const Home = () => {
           <button className='getSecret'>
             Получить
           </button>
-          <img 
+          <img style={{backgroundColor: 'red'}} 
             src={secretFotoChes}
             className='chesFotoSecret'
           />
@@ -773,7 +773,7 @@ const Home = () => {
           </button>
         </div>
         <div className='blockItemHome12Two'>
-          <img
+          <img style={{backgroundColor: 'red'}}
             src={onyOne}
             className='cheesCours'
           />
@@ -831,15 +831,13 @@ const Home = () => {
         <div className='blockOneItemHome14'>
           <p className='suportText'>При поддержке:</p>
           <div>
-            <img
+            <img style={{backgroundColor: 'red'}}
               src={logoOne}
-              style={{ marginTop: 30 }}
             />
           </div>
           <div>
-            <img
+            <img style={{backgroundColor: 'red'}}
               src={logoTwo}
-              style={{ marginTop: 36 }}
             />
           </div>
         </div>

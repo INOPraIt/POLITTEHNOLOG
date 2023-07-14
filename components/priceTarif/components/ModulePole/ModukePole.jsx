@@ -22,7 +22,7 @@ const ModukePole = ({
         <p className='introductionText' style={{color: colorText, width: width,}}>{namedModule}</p>
         {arrayDataPuncts.map(k =>
           <div className='punctItem'>
-            <img
+            <img style={{backgroundColor: 'red'}}
               src={iconsPng}
               className='imgIcon'
             />
