@@ -1492,9 +1492,16 @@ $primary: #EBAB07;
 				width: 100%;
 				align-items: center;
 				margin-top: 44px;
+				background-color: rgba(255, 0, 0, 0);
 
+				.formBlock {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					width: 100%;
+				}
 				.inpSecretForm {
-					width: 70%;
+					width: 100%;
 					outline: none;
 					height: 46px;
 					color: var(--on-bg, #FFF);
@@ -1513,7 +1520,7 @@ $primary: #EBAB07;
 
 			.getSecret {
 				border-radius: 10px;
-				width: 70%;
+				width: 100%;
 				background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
 				border-radius: 10px;
 				font-family: 'Mulish';

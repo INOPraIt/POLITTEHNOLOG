@@ -43,18 +43,18 @@ import fotoFiveS from '../components/img/fotoStudentsElips/5.png';
 import fotoSixS from '../components/img/fotoStudentsElips/6.png';
 import secretFotoChes from '../components/img/17.png';
 import imgProgrammFon from '../components/img/programmCours.png';
+import { ToastContainer, toast } from 'react-toastify';
 import imgRombsStudents from '../components/img/20.png';
-
 import fotoSecret11 from '../components/img/11Secret.png';
-// import linkThreeTochki from ''
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.css';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
 import ReactPlayer from 'react-player';
+import emailjs from '@emailjs/browser';
+
 
 const Home = () => {
+
 
   React.useResize = () => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -70,6 +70,8 @@ const Home = () => {
 
     console.log(width);
   }
+
+
 
   const arrayProgOne = [
     {
@@ -228,6 +230,36 @@ const Home = () => {
     },
   ]
 
+  const form = React.useRef();
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    emailjs.sendForm(
+      'service_k1zn6mn', 
+      'template_f5uegy4', 
+      form.current, 
+      'YOknTnh6Fpho6t7oB'
+      )
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      toast('Ваш запрос успешно отправлен', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+
+      // e.target.reset();
+  }
 
   return (
     <div className="containerHome">
@@ -411,7 +443,6 @@ const Home = () => {
         <div className="textsTwos">
         </div>
       </div>
-
       <div className='item4Secret'>
         <div className='blockMarcelHaziev'>
           <div className="imgBlockMarcelText">
@@ -490,7 +521,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className="itemHome4">
         <div className='blockItemHome4One'>
           <div className='columnItem4One'>
@@ -572,8 +602,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
-      
       <div className='itemHome5Secret'>
         <p className='programmTeacher'>
           Программа обучения
@@ -585,7 +613,6 @@ const Home = () => {
           />
         </div>
       </div>
-
       <div className="itemHome5">
         <h1 className="programmTeacher">
           Программа обучения
@@ -725,22 +752,47 @@ const Home = () => {
             консультацию специалиста
           </p>
           <div className='blockFormSecret'>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className='formExe'
+          >
+            <div className='formBlock'>
             <input 
               placeholder='Имя'
               className='inpSecretForm'
+              name="user_name"
             />
             <input 
               placeholder='Телефон'
               className='inpSecretForm'
+              name="user_phone"
             />
             <input 
               placeholder='e-mail'
               className='inpSecretForm'
+              name="user_email"
+              required
+              type='email'
             />
-          </div>
           <button className='getSecret'>
             Получить
           </button>
+          </div>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
+          </form> 
+          </div>
           <img  
             src={secretFotoChes}
             className='chesFotoSecret'
@@ -753,18 +805,28 @@ const Home = () => {
             Получить презентацию курса
             и консультацию специалиста
           </p>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className='blockFormSecret'
+          >
           <input
             placeholder='Имя'
             className='nameInput'
+            name="user_name"
           />
           <div className='groupImputsOne'>
             <input
               placeholder='Телефон'
               className='phoneInput'
+              name="user_phone"
             />
             <input
               placeholder='e-mail'
               className='mailInput'
+              name="user_email"
+              required
+              type='email'
             />
           </div>
           <button
@@ -772,6 +834,19 @@ const Home = () => {
           >
             получить
           </button>
+        </form>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
         </div>
         <div className='blockItemHome12Two'>
           <img 
