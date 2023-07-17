@@ -314,13 +314,11 @@ const Home = () => {
             минутное видео
             про курс
           </p>
-          
           <a href="#bottom">
-        {/* 
           <img
             src={twoFoto}
             className="fotoImg"
-          /> */}
+          />
           </a>=
         </div>
         <div className="blockHomeItem4">
@@ -744,8 +742,7 @@ const Home = () => {
           <PriceTarif />
         </div>
       </div>
-
-        <div className='itemHome12Secret'>
+      <div className='itemHome12Secret'>
           <p className='prezentationTextSecret'>
           <a name="cours"></a>
             Получить презентацию курса и 
@@ -797,8 +794,7 @@ const Home = () => {
             src={secretFotoChes}
             className='chesFotoSecret'
           />
-        </div>
-
+      </div>
       <div className='itemHome12'>
         <div className='blockItemHome12One'>
           <p className='textOneFollower'>
@@ -863,7 +859,6 @@ const Home = () => {
           <QuestionsContainer />
         </div>
       </div>
-
       <div className='itemHome14Secret'>
         <div className='blockTwoItemHome14S'>
           <p className='textDogovorPublicAffertsS'>
@@ -902,7 +897,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className='itemHome14'>
         <div className='blockOneItemHome14'>
           <p className='suportText'>При поддержке:</p>

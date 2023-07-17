@@ -7,7 +7,11 @@ import two from '../img/videoZaglush/2.png';
 import three from '../img/videoZaglush/3.png';
 import four from '../img/videoZaglush/4.png';
 import five from '../img/videoZaglush/5.png';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+// import 'swiper/css';
+// import '../../node_modules/swiper/modules/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
 
 const SlideTwo = () => {
 	return (

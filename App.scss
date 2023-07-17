@@ -39,6 +39,7 @@ body {
 	width: 90%;
 	margin-left: 60px;
 	border-radius: 10 10 0 0;
+
 	@media screen and (max-width: 1000px) {
 		display: none;
 	}
@@ -104,18 +105,18 @@ body {
 }
 
 .moduleTextFive {
-	
-cursor: pointer;
-background-image: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+
+	cursor: pointer;
+	background-image: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .active-moduleTextFive {
 	cursor: pointer;
-background-image: linear-gradient(111.57deg, rgb(0, 0, 0) 35.83%, rgb(0, 0, 0) 77.98%), linear-gradient(106.88deg, #000000 37.26%, rgb(0, 0, 0) 77.88%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+	background-image: linear-gradient(111.57deg, rgb(0, 0, 0) 35.83%, rgb(0, 0, 0) 77.98%), linear-gradient(106.88deg, #000000 37.26%, rgb(0, 0, 0) 77.88%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 
@@ -178,20 +179,33 @@ button {
 	border: none;
 }
 
+.contentTabsSecret {
+	display: none;
+
+	@media screen and (max-width: 800px) {
+		display: block;
+	}
+}
+
 .content-tabs {
 	flex-grow: 1;
+	width: 100%;
+	height: 500px;
+
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
 }
 
 .content {
 	background: rgba(150, 65, 65, 0);
-	padding: 20px;
 	width: 100%;
 	height: 100%;
 	display: none;
+	margin-top: 20px;
 
 	@media screen and (max-width: 800px) {
-		width: 150%;
-		margin-left: -20%;
+		width: 100%;
 		height: 140%;
 	}
 }
@@ -272,10 +286,15 @@ button {
 				grid-row-end: 2;
 				border-radius: 10px;
 				margin-top: -300px;
-				margin-left: -50px;
 				z-index: 1;
-			}	
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.podContOne {}
 		}
+
 
 
 
@@ -394,12 +413,12 @@ button {
 			height: 650px;
 		}
 
-		
-	
+
+
 		.blockDetalis {
 			display: flex;
 			margin-left: 20%;
-	
+
 			.detalisText {
 				text-align: center;
 				color: white;
@@ -410,7 +429,7 @@ button {
 					text-align: center;
 				}
 			}
-	
+
 			.btnCross {
 				width: 40px;
 				height: 40px;
@@ -425,7 +444,7 @@ button {
 					height: 30px;
 				}
 			}
-	
+
 			.btnCross:hover {
 				transform: rotate(-90deg);
 				transition: 0.3s;
@@ -433,7 +452,7 @@ button {
 
 			}
 		}
-	
+
 		.impEmailOne {
 			margin-left: 10%;
 			height: 60px;
@@ -460,7 +479,7 @@ button {
 			color: #ffffff;
 			transition: 0.4s;
 			font-size: 18px;
-			
+
 		}
 
 		.goToPayBtn:hover {
@@ -490,7 +509,7 @@ button {
 		transform: scale(1);
 		transition: 0.4s;
 	}
-	
+
 }
 
 .modalCont.active {
@@ -547,7 +566,7 @@ button {
 	font-size: 20px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	order:1;
+	order: 1;
 
 	@media screen and (max-width: 1000px) {
 		order: 2;
@@ -557,12 +576,12 @@ button {
 .imgStudentsBlock {
 	display: flex;
 	justify-content: center;
-	order:2;
+	order: 2;
 
 	@media screen and (max-width: 1000px) {
 		order: 1;
 	}
-	
+
 	.imgStudents {
 		margin-top: 26px;
 
@@ -642,7 +661,7 @@ button {
 		background: linear-gradient(111.57deg, rgba(255, 248, 248, 0.54) 35.83%, rgba(255, 255, 255, 0.108) 77.98%), linear-gradient(106.88deg, #F8B50B 37.26%, rgba(235, 171, 7, 0.59) 77.88%);
 		border-radius: 10px;
 
-	
+
 		.selectModuleBtn {
 			display: flex;
 		}
@@ -676,7 +695,99 @@ button {
 		border-radius: 10px;
 	}
 
-	.blockSecretSelect {
+	.blockSecretSelect {}
+}
 
+.moduleSecretContainer {
+	width: 100%;
+
+	.moduleSecretOne {
+		background-color: white;
+		height: 625px;
+		border-radius: 10px 10px 0 0;
+		overflow-y: auto;
+		overflow-x: hidden;
+
+		
+		.textsArrayMapSecret {
+			margin-top: 0px;
+		}
+
+		.arrayTabsContS {
+			display: flex;
+			margin-top: 20px;
+
+			.imgOne {
+				width: 6px;
+				height: 6px;
+				margin-top: 7px;
+				margin-left: 16px;
+			}
+
+			.textTitleOne {
+				color: var(--bg, #181818);
+				font-family: Mulish;
+				font-size: 16px;
+				width: 316px;
+				margin-left: 10px;
+				font-weight: 400;
+				line-height: 130%;
+				font-style: normal;
+			}
+		}
 	}
+
+	.moduleSecretTwo {
+		background-color: rgb(0, 0, 0);
+		height: 625px;
+		border-radius: 0 0 10px 10px;
+		overflow-y: auto;
+		overflow-x: hidden;
+
+		.textsArrayMapSecret {
+			margin-top: 0px;
+		}
+
+		.arrayTabsContS {
+			display: flex;
+			margin-top: 20px;
+
+			.imgOne {
+				width: 6px;
+				height: 6px;
+				margin-top: 7px;
+				margin-left: 16px;
+			}
+
+			.textTitleOne {
+				color: var(--bg, #ffffff);
+				font-family: Mulish;
+				font-size: 16px;
+				width: 316px;
+				margin-left: 10px;
+				font-weight: 400;
+				line-height: 130%;
+				font-style: normal;
+			}
+		}
+	}
+}
+
+.textVV {
+	max-width: 332px;
+	color: var(--bg, #181818);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	margin-left: 16px;
+	padding-top: 50px;
+}
+
+.textVVRes {
+	color: var(--bg, #ffffff);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	margin-left: 16px;
+	padding-top: 50px;
 }

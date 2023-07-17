@@ -31,7 +31,7 @@ $primary: #EBAB07;
 
 	@media screen and (max-width: 800px) {
 		max-width: 800px;
-		grid-template-rows: 890px 470px 1389px 587px 850px 2100px 120px 700px 600px 900px 6400px 1000px 900px 789px;
+		grid-template-rows: 890px 470px 1389px 587px 850px 1700px 120px 700px 600px 900px 6400px 1000px 900px 789px;
 	}
 
 	// @media screen and (max-width: 500px) {
@@ -196,8 +196,8 @@ $primary: #EBAB07;
 
 				@media screen and (max-width: 800px) {
 					width: 60%;
-					top: 600px;
-					left: 190px;
+					top: 700px;
+					left: 240px;
 				}
 			}
 		}
@@ -549,6 +549,14 @@ $primary: #EBAB07;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 300px 1400px;
 
+		@media screen and (max-width: 800px) {
+			background-image: url('../components/img/secretFon.png');
+			background-size: 70%;
+			background-position: right center;
+			background-repeat: no-repeat;
+		}
+
+
 		.blockItemHome3One {
 			display: flex;
 			flex-direction: column;
@@ -709,13 +717,20 @@ $primary: #EBAB07;
 		}
 
 		.textsTwos {
-			background-image: url('../components/img/8.png');
-			background-size: 100%;
-			margin-top: 40px;
-			background-repeat: no-repeat;
 
-			@media screen and (max-width: 1000px) {
-				background-position: top 500px;
+			// @media screen and (max-width: 1920px) {
+			// 	background-image: url('../components/img/8.png');
+			// 	background-size: 100%;
+			// 	margin-top: 40px;
+			// 	background-repeat: no-repeat;
+			// }
+
+			@media screen and (max-width: 800px) {
+
+				background-color: rgba(255, 255, 255, 0);
+				background-size: 100%;
+				margin-top: 40px;
+				background-repeat: no-repeat;
 			}
 		}
 	}
@@ -1304,7 +1319,7 @@ $primary: #EBAB07;
 			align-items: center;
 
 			.keysStudentsText {
-								margin-top: 127px;
+				margin-top: 127px;
 				font-family: 'Montserrat';
 				font-style: normal;
 				font-weight: 700;
@@ -1317,6 +1332,7 @@ $primary: #EBAB07;
 				text-fill-color: transparent;
 	
 				@media screen and (max-width: 800px) {
+					margin-top: 40px;
 					text-align: center;
 					font-family: Montserrat;
 					font-size: 24px;
@@ -1351,6 +1367,7 @@ $primary: #EBAB07;
 					font-style: normal;
 					font-weight: 400;
 					line-height: 130%;
+					margin-top: 20px;
 				}
 			}
 		}
@@ -1979,6 +1996,7 @@ $primary: #EBAB07;
 
 	@media screen and (max-width: 800px) {
 		display: block;
+		margin-top: 20px;
 	}
 
 	.blockFotoStudentsS {

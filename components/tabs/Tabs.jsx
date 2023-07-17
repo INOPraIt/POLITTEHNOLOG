@@ -291,7 +291,7 @@ const Tabs = () => {
 					Выберете модуль.
 				</button>
 
-				{select && 
+				{select &&
 					<div className="blockSecretSelect">
 						<div className="absoluteBtn">
 							<button
@@ -336,22 +336,6 @@ const Tabs = () => {
 			</div>
 			<div className="secretBlockTabs">
 				<div className="selectMenuBar">
-					{/* <div className="btnSelectMenuBar">
-					<button
-						onClick={() => setSelect(prev => !prev)}
-						className="selectProg"
-					>
-						<div className="selectModuleBtn">
-							<p>
-								Выберете модуль
-							</p>
-						</div>
-					</button>
-					</div>
-					{select &&
-						
-					} */}
-
 				</div>
 			</div>
 			<div className="bloc-tabs">
@@ -384,7 +368,7 @@ const Tabs = () => {
 					onClick={() => toggleTab(5)}
 				>
 					<p className={toggleState === 5 ? "moduleTextFive active-moduleTextFive" : "moduleTextFive"}>
-					Модуль 5
+						Модуль 5
 					</p>
 				</button>
 				<button
@@ -395,21 +379,308 @@ const Tabs = () => {
 				</button>
 			</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div className="contentTabsSecret">
+				{/* Item 1 */}
+				<div
+					className={toggleState === 1 ? "content  active-content" : "content"}
+				>
+					<div className="moduleSecretContainer">
+						<div className="moduleSecretOne">
+							<div>
+								<p className="textVV">
+									Введение
+								</p>
+								{arrayTabsOne.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+							</div>
+
+						</div>
+						<div className="moduleSecretTwo">
+						<div>
+								<p className="textVVRes">
+									Результат
+								</p>
+								{arrayTabsResultOne.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Item 2 */}
+
+				<div
+					className={toggleState === 2 ? "content  active-content" : "content"}
+				>
+					<div className="moduleSecretContainer">
+						<div className="moduleSecretOne">
+							<div>
+								<p className="textVV">
+									Как прокачать узнаваемость без лишних затрат
+								</p>
+								{arrayTabsTwo.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+							</div>
+
+						</div>
+						<div className="moduleSecretTwo">
+						<div>
+								<p className="textVVRes">
+									Результат
+								</p>
+								{arrayTabsResultTwo.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* Item 3 */}
+
+				<div
+					className={toggleState === 3 ? "content  active-content" : "content"}
+				>
+						<div className="moduleSecretContainer">
+						<div className="moduleSecretOne">
+							<div>
+								<p className="textVV">
+								Агитация, средства массовой информации, спонсоры
+								</p>
+								{arrayTabsThree.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+							</div>
+
+						</div>
+						<div className="moduleSecretTwo">
+						<div>
+								<p className="textVVRes">
+									Результат
+								</p>
+								{arrayTabsResultThree.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Item 4 */}
+
+				<div
+					className={toggleState === 4 ? "content  active-content" : "content"}
+				>
+						<div className="moduleSecretContainer">
+						<div className="moduleSecretOne">
+							<div>
+								<p className="textVV">
+									ДЕНЬ ВЫБОРОВ С ЮРИСТОМ, РАБОТАЮЩИМ В ЦЕНТРАЛЬНОЙ ИЗБИРАТЕЛЬНОЙ КОМИССИИ (ЦИК) РОССИИ
+								</p>
+								{arrayTabsFour.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+							</div>
+
+						</div>
+						<div className="moduleSecretTwo">
+						<div>
+								<p className="textVVRes">
+									Результат
+								</p>
+								{arrayTabsResultFour.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Item 5 */}
+
+				<div
+					className={toggleState === 5 ? "content  active-content" : "content"}
+				>
+						<div className="moduleSecretContainer">
+						<div className="moduleSecretOne">
+							<div>
+								<p className="textVV">
+									ЗОЛОТОЙ МОДУЛЬ “ОТ ПРАВОЗАЩИТНИКА ЖКХ - В ДЕПУТАТЫ” ИЛИ ВЫИГРЫШНАЯ ИЗБИРАТЕЛЬНАЯ КАМПАНИЯ ЗА 70 ТЫСЯЧ РУБЛЕЙ
+								</p>
+								{arrayTabsFive.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+							</div>
+
+						</div>
+						<div className="moduleSecretTwo">
+						<div>
+								<p className="textVVRes">
+									Результат
+								</p>
+								{arrayTabsResultFive.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Item 6 */}
+
+				<div
+					className={toggleState === 6 ? "content  active-content" : "content"}
+				>
+						<div className="moduleSecretContainer">
+						<div className="moduleSecretOne">
+							<div>
+								<p className="textVV">
+									ДОПОЛНИТЕЛЬНЫЙ
+								</p>
+								{arrayTabsSix.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+							</div>
+
+						</div>
+						<div className="moduleSecretTwo">
+						<div>
+								<p className="textVVRes">
+									Результат
+								</p>
+								{arrayTabsResultSix.map(k =>
+									<div className="arrayTabsContS">
+										<img
+											src={one}
+											className="imgOne"
+										/>
+										<p className="textTitleOne">{k.title}</p>
+									</div>
+								)}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
 			<div className="content-tabs">
 				{/* Item 1 */}
 				<div
 					className={toggleState === 1 ? "content  active-content" : "content"}
 				>
+
 					<div className="contentTypeTabsContainer">
 						huhuih
 						<div className="contentTypeTabsOne">
 							<div className="contOne">
-								<div>
+								<div className="podContOne">
 									<p className="blockOneHeader">Введение</p>
 									<div>
 										{arrayTabsOne.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={one}
 													className="imgOne"
 												/>
@@ -427,7 +698,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultOne.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={two}
 													className="imgTwo"
 												/>
@@ -439,7 +710,7 @@ const Tabs = () => {
 									</div>
 								</div>
 							</div>
-						</div> 
+						</div>
 					</div>
 				</div>
 
@@ -456,7 +727,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsTwo.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={one}
 													className="imgOne"
 												/>
@@ -474,7 +745,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultTwo.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={two}
 													className="imgTwo"
 												/>
@@ -505,7 +776,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsThree.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={one}
 													className="imgOne"
 												/>
@@ -523,7 +794,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultThree.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={two}
 													className="imgTwo"
 												/>
@@ -555,7 +826,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsFour.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={one}
 													className="imgOne"
 												/>
@@ -573,7 +844,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultFour.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={two}
 													className="imgTwo"
 												/>
@@ -601,13 +872,13 @@ const Tabs = () => {
 								<div>
 									<p className="blockOneHeader">
 										ЗОЛОТОЙ МОДУЛЬ “От <br />
-										правозащитника ЖКХ - в депутаты” или выигрышная избирательная<br /> 
+										правозащитника ЖКХ - в депутаты” или выигрышная избирательная<br />
 										кампания за 70 тысяч рублей.
 									</p>
 									<div>
 										{arrayTabsFive.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={one}
 													className="imgOne"
 												/>
@@ -625,7 +896,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultFive.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={two}
 													className="imgTwo"
 												/>
@@ -639,7 +910,7 @@ const Tabs = () => {
 								</div>
 							</div>
 						</div>
-					</div> 
+					</div>
 				</div>
 
 				{/* Item 6 */}
@@ -657,7 +928,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsSix.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={one}
 													className="imgOne"
 												/>
@@ -675,7 +946,7 @@ const Tabs = () => {
 									<div>
 										{arrayTabsResultSix.map(k =>
 											<div className="arrayTabsCont">
-												<img 
+												<img
 													src={two}
 													className="imgTwo"
 												/>
