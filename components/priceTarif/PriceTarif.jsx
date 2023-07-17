@@ -388,6 +388,8 @@ const PriceTarif = () => {
     },
   ];
 
+  const black = 'black'
+
   return (
     <div className='containerPriceTarif'>
       <div className='itemCezar'>
@@ -551,8 +553,8 @@ const PriceTarif = () => {
                 topM={54}
                 borderColor={'#181818'}
                 width={250}
-                marginR={-5}
-                colorText={'black'}
+                marginR={0}
+                colorText={black}
                 iconsPng={iconTwo}
               />
               <ModukePole

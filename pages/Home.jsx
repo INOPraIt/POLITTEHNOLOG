@@ -714,7 +714,6 @@ const Home = () => {
             </Swiper>
         </div>
 
-
       </div>
       <div className='itemHome9'>
         <p className='stopingText'>
