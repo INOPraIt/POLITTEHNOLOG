@@ -22,9 +22,6 @@ const idThree = Date.now();
 const PriceTarif = () => {
   const [linkVip, setLinkVip] = React.useState('');
 
-  const goToPayFunc = () => {
-    return <Navigate to="/about" replace={true}/>
-  }
 
   const arrayModuleFive = [
     {
@@ -670,13 +667,13 @@ const PriceTarif = () => {
             className='goToPayBtn'
             onClick={() => goToPayFunc()}
             >
-            {/* <a
+            <a
               href={linkOne}
               className='goToPayLink'
               onclick={() => saleLink()}
-            > */}
+            >
               Перейти к оплате
-            {/* </a> */}
+            </a>
           </button>
         </div>
         <ToastContainer
