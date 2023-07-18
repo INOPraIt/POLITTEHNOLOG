@@ -374,10 +374,17 @@ const Home = () => {
         </p>
         <div className="classFotoOne">
         <a name="twoXCours"></a>
-          <img style={{backgroundColor: 'blue'}}
+            <ReactPlayer
+    					className='react-player'
+          		url='https://www.youtube.com/watch?v=mr3pywHOz7I'
+							width={'80%'}
+          		height='150px'
+							style={{ marginTop: '100px'}}
+        		/>
+          {/* <img style={{backgroundColor: 'blue'}}
             src={fiveFoto}
             className="fiveFotoOne"
-          /> 
+          />  */}
           <div className="btnGold">
             <p className="seeCurs">
               <a href='#cours' style={{textDecoration: 'none', color: "#422F01"}}>

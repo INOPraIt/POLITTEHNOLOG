@@ -31,7 +31,7 @@ $primary: #EBAB07;
 
 	@media screen and (max-width: 800px) {
 		max-width: 800px;
-		grid-template-rows: 890px 470px 1389px 587px 850px 1700px 120px 700px 500px 900px 6000px 1000px 900px 789px;
+		grid-template-rows: 890px 470px 1389px 587px 850px 1700px 120px 700px 500px 900px 6000px 1000px 1100px 789px;
 	}
 
 	// @media screen and (max-width: 500px) {
@@ -175,9 +175,9 @@ $primary: #EBAB07;
 				@media screen and (max-width: 800px) {
 					margin-left: 100px;
 					font-size: 10px;
-					margin-top: 360px;
+					margin-top: 370px;
 					width: 82px;
-					margin-left: 270px;
+					margin-left: 250px;
 				}
 			}
 
@@ -198,7 +198,7 @@ $primary: #EBAB07;
 				@media screen and (max-width: 800px) {
 					width: 50%;
 					top: 730px;
-					left: 220px;
+					left: 200px;
 				}
 			}
 		}
@@ -1566,7 +1566,7 @@ $primary: #EBAB07;
 	.itemHome12 {
 		grid-column-start: 1;
 		grid-column-end: 4;
-		background-color: #00be0900;
+		background: var(--bg, #181818);
 		display: grid;
 		grid-template-columns: 1.7fr 1fr;
 		grid-template-rows: 1000px;
