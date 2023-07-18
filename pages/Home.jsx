@@ -753,7 +753,7 @@ const Home = () => {
             onSubmit={sendEmail}
             className='formExe'
           >
-            <div className='formBlock'>
+          <div className='formBlock'>
             <input 
               placeholder='Имя'
               className='inpSecretForm'

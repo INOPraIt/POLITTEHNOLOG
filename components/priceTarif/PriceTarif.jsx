@@ -15,11 +15,16 @@ import btnCross from '../img/icons/icons8-cross-60.png';
 import { ToastContainer, toast } from 'react-toastify';
 import iconTwo from '../img/icons/13.png';
 import axios from 'axios';
+import { Navigate } from "react-router-dom";
 
 const idThree = Date.now();
 
 const PriceTarif = () => {
   const [linkVip, setLinkVip] = React.useState('');
+
+  const goToPayFunc = () => {
+    return <Navigate to="/about" replace={true}/>
+  }
 
   const arrayModuleFive = [
     {
@@ -648,25 +653,30 @@ const PriceTarif = () => {
             placeholder='Email'
             value={email}
             onChange={(event) => setEmail(event.target.value)}
+            required
           />
           <input
             className='impEmailOne'
             placeholder='Ваш телефон'
             value={mobilePhone}
             onChange={(event) => setMobilePhone(event.target.value)}
+            required
           />
           <p className='textPayLink'>
             Нажимая кнопку оплатить вы соглашаетесь
             с договором публичной оферты
           </p>
-          <button className='goToPayBtn'>
-            <a
+          <button 
+            className='goToPayBtn'
+            onClick={() => goToPayFunc()}
+            >
+            {/* <a
               href={linkOne}
               className='goToPayLink'
               onclick={() => saleLink()}
-            >
+            > */}
               Перейти к оплате
-            </a>
+            {/* </a> */}
           </button>
         </div>
         <ToastContainer
