@@ -315,10 +315,10 @@ const Home = () => {
             про курс
           </p>
           <a href="#bottom">
-          <img
+          {/* <img
             src={twoFoto}
             className="fotoImg"
-          />
+          /> */}
           </a>=
         </div>
         <div className="blockHomeItem4">
