@@ -193,12 +193,14 @@ $primary: #EBAB07;
 					width: 30%;
 					left: 120px;
 					top: 260px;
+					display: none;
 				}
 
 				@media screen and (max-width: 800px) {
 					width: 50%;
 					top: 730px;
 					left: 200px;
+					display: none;
 				}
 			}
 		}
