@@ -847,7 +847,7 @@ const Home = () => {
             pauseOnFocusLoss
             draggable
             pauseOnHover
-            theme="light"
+            theme="dark"
           />
         </div>
         <div className='blockItemHome12Two'>
