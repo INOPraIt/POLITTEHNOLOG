@@ -3,7 +3,8 @@
   The site was created by special order of Chelyabinsk deputy Marcel Khaziev, who wanted to teach people how 
   to properly enter the political life of the state. The website provides a detailed description of training with Marcel.
 </p>
- ![alt text](https://sun9-42.userapi.com/impg/JkK7RQIjQWzq8DXRSW3gNd4CmfQ3yeD8BhqILQ/cgj3TcUcaAU.jpg?size=1919x937&quality=95&sign=65322b4051f7eeb0df461b17116eaeca&type=album)
+
+ ![alt text](https://sun9-43.userapi.com/impg/CMIPpvlTz4ZWHIWiHlvF2yENqbIJ453dVASWxg/09oPElk7rLU.jpg?size=2560x1423&quality=95&sign=8cee01102df172955b7df650f35a41d3&type=album)
  
  ![alt text](https://sun9-73.userapi.com/impg/M_YSCNIpF7Tcl0Qy-8DgAN5tvNmwmWQEYuws0Q/-_w_dRipUzg.jpg?size=1919x936&quality=95&sign=29f4024dc04ab980a07501eec323f3cb&type=album)
  
